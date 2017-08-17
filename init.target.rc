@@ -65,9 +65,16 @@ on init
     chmod 0664 /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
     chmod 0664 /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
-on fs
+    # QSEE rpmb listener need symlink for bootdevice
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+
+    # start qseecomd early as we mount system/ vendor/ early
+    # vold needs keymaster that needs qseecomd
+    start vendor.qseecomd
+    wait_for_prop vendor.sys.listeners.registered true
+
+on fs
     mount_all /vendor/etc/fstab.qcom --early
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
@@ -94,10 +101,6 @@ on late-fs
 
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
-
-on post-fs
-    start vendor.qseecomd
-    wait_for_prop vendor.sys.listeners.registered true
 
 on post-fs-data
     mkdir /data/vendor/tombstones/modem 0771 system system
