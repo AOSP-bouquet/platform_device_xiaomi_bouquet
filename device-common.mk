@@ -395,6 +395,10 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
+# Usb
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.xiaomi_sdm660
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl:64 \
