@@ -88,9 +88,6 @@ on fs
     chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
     mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
 
-    # Start HW service manager early
-    start hwservicemanager
-
 on late-fs
     # Start services for bootanim
     start surfaceflinger
@@ -99,6 +96,10 @@ on late-fs
     start vendor.configstore-hal
     start vendor.gralloc-2-0
 
+    # Wait for hwservicemanager ready since fsck might be triggered in mount_all --late
+    # In such case, init won't responce the property_set from hwservicemanager and then
+    # cause services for bootanim not running.
+    wait_for_prop hwservicemanager.ready true
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
 
