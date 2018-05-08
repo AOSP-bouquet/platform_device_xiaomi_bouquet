@@ -95,6 +95,9 @@ on enable-low-power
     # Enable EAS
     write /proc/sys/kernel/sched_energy_aware 1
 
+    # Set the default IRQ affinity to the silver cluster.
+    write /proc/irq/default_smp_affinity f
+
     # Dividing critical IRQs between CPUs improves latency
     # msm_drm
     write /proc/irq/7/smp_affinity_list 2
