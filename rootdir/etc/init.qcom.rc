@@ -713,3 +713,7 @@ service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@
     onrestart restart surfaceflinger
     task_profiles ServiceCapacityLow
     socket pps stream 0660 system system
+
+# Start after the device booted
+on property:sys.boot_completed=1
+    enable vendor.msm_irqbalance
