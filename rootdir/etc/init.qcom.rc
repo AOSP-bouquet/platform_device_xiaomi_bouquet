@@ -703,3 +703,7 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     ioprio rt 4
     task_profiles ProcessCapacityHigh HighPerformance
     onrestart restart audioserver
+
+# Start after the device booted
+on property:sys.boot_completed=1
+    enable vendor.msm_irqbalance
