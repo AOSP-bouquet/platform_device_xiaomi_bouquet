@@ -159,4 +159,4 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqb
     class core
     user root
     group root
-    task_profiles ServiceCapacityLow
+    disabled
