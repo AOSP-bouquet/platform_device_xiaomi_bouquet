@@ -702,3 +702,7 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
+
+# Start after the device booted
+on property:sys.boot_completed=1
+    enable vendor.msm_irqbalance
