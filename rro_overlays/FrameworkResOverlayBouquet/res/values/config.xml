@@ -318,4 +318,7 @@
         <item>16</item>
     </integer-array>
 
+    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
+
 </resources>
