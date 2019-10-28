@@ -95,6 +95,14 @@ on enable-low-power
     # Enable EAS
     write /proc/sys/kernel/sched_energy_aware 1
 
+    # Dividing critical IRQs between CPUs improves latency
+    # msm_drm
+    write /proc/irq/7/smp_affinity_list 2
+    # synaptics,s3320
+    #echo 0 > /proc/irq/377/smp_affinity_list
+    # kgsl-3d0
+    write /proc/irq/489/smp_affinity_list 1
+
     # Enable bus-dcvs
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/governor "bw_hwmon"
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/polling_interval 50
