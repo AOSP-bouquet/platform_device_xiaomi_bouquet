@@ -406,7 +406,8 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libcamera_shim
+    libcamera_shim \
+    libMiWatermark_shim
 
 # Telephony
 PRODUCT_PACKAGES += \
