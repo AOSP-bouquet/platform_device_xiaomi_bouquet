@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/whyred/overlay
 
+# Powerhint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint_sdm636.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/whyred/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
