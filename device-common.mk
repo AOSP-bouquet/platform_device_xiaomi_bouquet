@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
     HentaiWallpaperRed \
     SettingsGoogleOverlayBouquet \
     SystemUIGoogleOverlayBouquet \
+    TelephonyOverlayBouquet \
     WifiOverlayBouquet
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
