@@ -158,6 +158,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.dpm.loglevel=0 \
     persist.vendor.dpm.nsrm.bkg.evt=3955
 
+# fastbootd
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fastbootd.available=true
+
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
