@@ -40,9 +40,6 @@ persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.force_on_dc=true
 ril.subscription.types=RUIM
 
-# Rescue party
-persist.sys.disable_rescue=true
-
 # Shutdown
 ro.build.shutdown_timeout=2
 
