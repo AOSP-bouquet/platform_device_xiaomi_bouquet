@@ -235,3 +235,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pmd=true \
     ro.vendor.sensors.sta_detect=true \
     ro.vendor.sensors.mot_detect=true
+
+# Disable Rescue Party on userdebug & eng build
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.disable_rescue=true
+endif
