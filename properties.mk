@@ -134,6 +134,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
     debug.renderengine.backend=skiaglthreaded \
+    debug.sf.disable_backpressure=1 \
     debug.sf.disable_client_composition_cache=1 \
     debug.sf.enable_gl_backpressure=1 \
     debug.sf.hw=1 \
