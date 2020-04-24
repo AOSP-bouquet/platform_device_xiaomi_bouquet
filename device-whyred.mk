@@ -56,5 +56,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libcamera_sdm660_shim
 
+# Wifi
+PRODUCT_PACKAGES += \
+    WhyredWifiOverlay
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
