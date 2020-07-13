@@ -282,11 +282,6 @@
         <fqname>@1.0::IUimRemoteServiceServer/uimRemoteServer1</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.soter</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::ISoter/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.tui_comm</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::ITuiComm/default</fqname>
@@ -300,10 +295,5 @@
         <name>vendor.qti.imsrtpservice</name>
         <transport>hwbinder</transport>
         <fqname>@3.0::IRTPService/imsrtpservice</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.mlipay</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::IMlipayService/default</fqname>
     </hal>
 </manifest>
