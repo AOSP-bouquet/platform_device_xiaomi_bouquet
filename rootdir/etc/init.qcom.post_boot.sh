@@ -705,6 +705,10 @@ function sdm660_sched_schedutil_dcvs() {
     echo 500 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
     echo 20000 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
 
+    # Report max frequency to unity tasks
+    echo "UnityMain,libunity.so" > /proc/sys/kernel/sched_lib_name
+    echo 255 > /proc/sys/kernel/sched_lib_mask_force
+
     # Enable bus-dcvs
     for device in /sys/devices/platform/soc
     do
