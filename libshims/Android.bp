@@ -5,11 +5,27 @@
 //
 
 cc_library_shared {
-    name: "libcamera_sdm660_shim",
     srcs: ["camera_sdm660_shim.cpp"],
     shared_libs: [
+        "libbinder",
         "libui",
         "libutils",
     ],
+    name: "libcamera_sdm660_shim",
+    compile_multilib: "32",
     vendor: true,
+    target: {
+        android_arm: {
+            srcs: ["arch-arm/memset32.S"],
+            sanitize: {
+                misc_undefined: ["integer"],
+            },
+        },
+        android_arm64: {
+            srcs: ["arch-arm64/android_memset.S"],
+            sanitize: {
+                misc_undefined: ["integer"],
+            },
+        }
+    }
 }
