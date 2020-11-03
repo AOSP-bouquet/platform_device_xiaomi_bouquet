@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/hentai_whyred.mk \
-    $(LOCAL_DIR)/hentai_tulip.mk
+    $(LOCAL_DIR)/whyred.mk \
+    $(LOCAL_DIR)/tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-    hentai_whyred-user \
-    hentai_whyred-userdebug \
-    hentai_whyred-eng \
-    hentai_tulip-user \
-    hentai_tulip-userdebug \
-    hentai_tulip-eng
+    whyred-user \
+    whyred-userdebug \
+    whyred-eng \
+    tulip-user \
+    tulip-userdebug \
+    tulip-eng

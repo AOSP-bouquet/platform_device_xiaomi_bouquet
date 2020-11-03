@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# PRODUCT_SHIPPING_API_LEVEL indicates the first api level, device has been commercially launched on.
-PRODUCT_SHIPPING_API_LEVEL := 27
-
 # Inherit from bouquet
 $(call inherit-product, device/xiaomi/bouquet/device-common.mk)
 
