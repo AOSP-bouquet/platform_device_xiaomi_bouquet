@@ -418,6 +418,9 @@ vendor/lib64/vendor.display.color@1.0.so|c7eb0d87e45934ad7ff34d0c977116ed4609186
 vendor/lib64/vendor.display.color@1.1.so|d2dfc3fff6aaf7989110ebe05af154186e535010
 vendor/lib64/vendor.display.postproc@1.0.so|c9c96ff50b6ff8989fac9fdf35d282a996ea477a
 
+# Power-off charging daemon - from sweet
+-sbin/charger:bin/chargeonlymode|f05dbb52459ce3dcdf58363090dccb5e10629319
+
 # QMI (system) - from LA.QSSI.13.0.r1-05500-qssi.0
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
