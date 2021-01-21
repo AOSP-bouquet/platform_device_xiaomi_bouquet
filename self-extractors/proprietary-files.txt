@@ -362,7 +362,6 @@ vendor/lib64/libkeymasterprovision.so|d6c95d3543c707df133d50764f647e5f07adb82b
 vendor/lib64/libkeymasterutils.so|987314a722c4f69061fc2c2be1ecd6e7f1b8e38c
 
 # Listen - from LA.UM.9.2.1.r1-08700-sdm660.0
-vendor/lib/hw/sound_trigger.primary.sdm660.so|a631c27bd3fe9150c84c134a422eaddee20753a8
 vendor/lib/libadpcmdec.so|b3ec2cc197b682aa6ae7e1da9c8f25cc1aa75750
 vendor/lib/libgcs-calwrapper.so|f7fc56da43e70b7b68f0c3168db93f3537d38d1a
 vendor/lib/libgcs-ipc.so|4953d2a0cfb6ab0c9e083ddccd225761cb0dffe8
