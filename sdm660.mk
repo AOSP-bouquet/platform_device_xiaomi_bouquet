@@ -59,6 +59,10 @@ PRODUCT_COPY_FILES += \
 # Apex
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# SystemUIGoogle package
+PRODUCT_PACKAGES += \
+    SystemUIGoogleOverlayHentai
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl:32 \
