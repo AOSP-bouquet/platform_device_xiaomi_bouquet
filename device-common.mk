@@ -67,7 +67,8 @@ PRODUCT_COPY_FILES += \
 
 # HentaiOS Stuff
 PRODUCT_PACKAGES += \
-    HentaiWallpaperDark
+    HentaiWallpaperDark \
+    SystemUIGoogleOverlayHentai
 
 # Audio
 PRODUCT_PACKAGES += \
