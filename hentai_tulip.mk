@@ -38,5 +38,3 @@ PRODUCT_NAME := hentai_tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-TARGET_VENDOR_PRODUCT_NAME := tulip
