@@ -455,6 +455,12 @@ on boot
     setprop sys.usb.configfs 1
     write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
 
+    # Start RIL services
+    start vendor.qcrild
+    start vendor.qcrild2
+    start vendor.dataqti
+    start vendor.dataadpl
+
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
@@ -649,12 +655,6 @@ service mdtpd /system/vendor/bin/mdtpd
 
 service vendor.pd_mapper /system/vendor/bin/pd-mapper
      class core
-
-on property:vold.decrypt=trigger_restart_framework
-    start vendor.qcrild
-    start vendor.qcrild2
-    start vendor.dataqti
-    start vendor.dataadpl
 
 service ppd /system/vendor/bin/mm-pp-dpps
     class late_start
