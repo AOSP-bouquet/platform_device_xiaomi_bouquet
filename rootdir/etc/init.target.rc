@@ -102,6 +102,12 @@ on early-boot
     chown system system /mnt/vendor/persist/sensors/sensors_settings
     chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
 
+on late-init
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+
 on boot
     start rmt_storage
     start rfs_access
