@@ -14,6 +14,9 @@ ro.config.low_ram=false
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
+# One-handed mode
+ro.support_one_handed_mode=true
+
 # Pixelmask
 ro.build.fingerprint=google/redfin/redfin:12/SQ1A.211205.008/7888514:user/release-keys
 ro.product.brand=google
