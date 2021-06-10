@@ -480,3 +480,7 @@ service boot_dmesg /system/bin/sh -c "dmesg -w > /cache/boot_dmesg.txt"
     group root system
     disabled
     oneshot
+
+on property:sys.boot_completed=1
+    # Enable EAS
+    write /proc/sys/kernel/sched_energy_aware 1
