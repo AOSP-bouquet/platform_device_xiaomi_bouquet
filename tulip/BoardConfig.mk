@@ -27,6 +27,9 @@ include device/xiaomi/bouquet/BoardConfig-common.mk
 
 LOCAL_PATH := device/xiaomi/bouquet
 
+# AVB
+BOARD_AVB_ENABLE := false
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := tulip
 
