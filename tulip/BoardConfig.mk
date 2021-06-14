@@ -27,6 +27,9 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
 LOCAL_PATH := device/xiaomi/sdm660-common
 
+# AVB
+BOARD_AVB_ENABLE := false
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := tulip
 
