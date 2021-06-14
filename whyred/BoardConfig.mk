@@ -9,6 +9,9 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
 LOCAL_PATH := device/xiaomi/sdm660-common/whyred
 
+# AVB
+BOARD_AVB_ENABLE := false
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
