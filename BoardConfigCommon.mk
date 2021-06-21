@@ -44,6 +44,10 @@ BOARD_KERNEL_CMDLINE := \
     usbcore.autosuspend=7\
     kpti=off
 
+# HOLY CTS LORDS - Don't patch plz google
+BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=green
+# HOLY CTS LORDS - Don't patch plz google
+
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
