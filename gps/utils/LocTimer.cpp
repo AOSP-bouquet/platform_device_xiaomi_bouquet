@@ -41,6 +41,7 @@
 #include <LocThread.h>
 #include <LocSharedLock.h>
 #include <MsgTask.h>
+#include <bits/epoll_event.h>
 
 #ifdef __HOST_UNIT_TEST__
 #define EPOLLWAKEUP 0
