@@ -23,3 +23,6 @@ ro.product.product.manufacturer=Google
 ro.product.product.model=Pixel 5
 ro.product.product.name=redfin
 # end common build properties
+
+# Rescue party
+persist.sys.disable_rescue=true
