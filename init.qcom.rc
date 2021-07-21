@@ -331,7 +331,7 @@ on early-boot
     chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
 
 on boot
-    start rmt_storage
+    start vendor.rmt_storage
     start rfs_access
     ####Regionalization config and prop files####
     chmod 0644 /persist/speccfg/spec
