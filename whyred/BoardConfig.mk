@@ -13,9 +13,6 @@ LOCAL_PATH := device/xiaomi/sdm660-common/whyred
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
-
 # Display
 TARGET_SCREEN_DENSITY := 440
 

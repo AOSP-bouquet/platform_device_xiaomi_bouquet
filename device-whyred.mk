@@ -28,10 +28,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
-# HW crypto
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
-
 # Kernel
 LOCAL_KERNEL := device/xiaomi/sdm660-kernel/whyred/Image.gz-dtb
 
