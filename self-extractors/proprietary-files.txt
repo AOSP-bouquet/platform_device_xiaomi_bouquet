@@ -510,6 +510,13 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161c
 # Radio - IMS - from mojito
 vendor/lib64/lib-imsvtcore.so|47d945bf976134fdb57b4f44dd73a1347f2bf421
 
+# Thermal - from ginkgo V12.5.1.0.RCOCNXM
+vendor/bin/thermal-engine|6cd660e2b813896670a14be244d1046afe90064e
+vendor/lib/libthermalclient.so|0aab8039958acdd27af71c5c6923dcd7208f886f
+vendor/lib/libthermalfeature.so|52c35a4e2bc048839e4f9172cc2d299e2367a1fd
+vendor/lib64/libthermalclient.so|ed01fa6caeb9dfbddc0fafc197abe13f3c8b56f9
+vendor/lib64/libthermalfeature.so|f2b78560b6b87c19336ae48ea26d3af756123047
+
 # Time services - from jasmine
 -vendor/app/TimeService/TimeService.apk|27f9b81621c446baa8c37581d9bfbca2fd67b496
 vendor/bin/time_daemon|d647fa02dfb28b6cb981c4e77daee75a67406351
