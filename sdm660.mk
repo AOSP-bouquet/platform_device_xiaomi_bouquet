@@ -59,9 +59,10 @@ PRODUCT_COPY_FILES += \
 # Apex
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# SystemUIGoogle package
+# HentaiOS Stuff
 PRODUCT_PACKAGES += \
-    SystemUIGoogleOverlayHentai
+    SystemUIGoogleOverlayHentai \
+    HentaiWallpaperBlack
 
 # Audio
 PRODUCT_PACKAGES += \
