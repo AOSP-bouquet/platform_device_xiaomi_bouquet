@@ -62,7 +62,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # HentaiOS Stuff
 PRODUCT_PACKAGES += \
     SystemUIGoogleOverlayHentai \
-    HentaiWallpaperBlack
+    HentaiWallpaperDark
 
 # Audio
 PRODUCT_PACKAGES += \
