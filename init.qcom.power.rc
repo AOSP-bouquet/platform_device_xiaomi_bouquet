@@ -25,9 +25,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on early-init
-    write /proc/sys/kernel/sched_boost 1
-
 on init
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.boost 10
@@ -55,19 +52,13 @@ on init
 
     # Configure governor settings for little cluster
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq 1401600
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 633600
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/rtg_boost_freq 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
 
     # Configure governor settings for big cluster
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 0
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 0
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq 1401600
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 1113600
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/rtg_boost_freq 0
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 20000
 
     # Report max frequency to unity tasks
     write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
@@ -102,33 +93,6 @@ on enable-low-power
     # Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
 
-    # Core control parameters
-    write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
-    write /sys/devices/system/cpu/cpu4/core_ctl/min_cpus 2
-    write /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres 60
-    write /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres 40
-    write /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms 100
-    write /sys/devices/system/cpu/cpu4/core_ctl/task_thres 4
-
-    # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
-    write /sys/devices/system/cpu/cpu0/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu1/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu2/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu3/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu4/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu5/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu6/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu7/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load 85
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load 85
-
-    # Setting b.L scheduler parameters
-    write /proc/sys/kernel/sched_upmigrate 77
-    write /proc/sys/kernel/sched_downmigrate 67
-    write /proc/sys/kernel/sched_group_upmigrate 100
-    write /proc/sys/kernel/sched_group_downmigrate 85
-    write /proc/sys/kernel/sched_walt_rotate_big_tasks 1
-
     # Enable bus-dcvs
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/governor "bw_hwmon"
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/polling_interval 50
@@ -150,9 +114,6 @@ on enable-low-power
     # Set cpuset parameters
     write /dev/cpuset/background/cpus 0-3
     write /dev/cpuset/system-background/cpus 0-3
-
-    # Turn off scheduler boost at the end
-    write /proc/sys/kernel/sched_boost 0
 
     # Turn on sleep modes
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
