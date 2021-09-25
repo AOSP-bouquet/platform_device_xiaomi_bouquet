@@ -695,60 +695,15 @@ function sdm660_sched_interactive_dcvs() {
 
 function sdm660_sched_schedutil_dcvs() {
 
-    if [ $KernelVersionA -ge 4 ] && [ $KernelVersionB -ge 19 ]; then
-        # configure governor settings for little cluster
-        echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
-        echo 1401600 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
-        echo 633600 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
-        echo 902400 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq
+    # configure governor settings for little cluster
+    echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+    echo 500 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
+    echo 20000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
 
-        # configure governor settings for big cluster
-        echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
-        echo 1401600 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
-        echo 1113600 > /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/rtg_boost_freq
-    else
-        # configure governor settings for little cluster
-        echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-        echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-        echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
-        echo 1401600 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
-
-        # configure governor settings for big cluster
-        echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-        echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
-        echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
-        echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
-    fi
-
-    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
-
-    #if the kernel version >=4.19,set input_boost_freq accordingly
-    if [ $KernelVersionA -ge 4 ] && [ $KernelVersionB -ge 19 ]; then
-        echo "0:1401600" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
-        echo 40 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
-    else
-        echo "0:1401600" > /sys/module/cpu_boost/parameters/input_boost_freq
-        echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
-    fi
-
-    # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
-    echo -6 >  /sys/devices/system/cpu/cpu0/sched_load_boost
-    echo -6 >  /sys/devices/system/cpu/cpu1/sched_load_boost
-    echo -6 >  /sys/devices/system/cpu/cpu2/sched_load_boost
-    echo -6 >  /sys/devices/system/cpu/cpu3/sched_load_boost
-    echo -6 >  /sys/devices/system/cpu/cpu4/sched_load_boost
-    echo -6 >  /sys/devices/system/cpu/cpu5/sched_load_boost
-    echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
-    echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-    echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
-    echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
+    # configure governor settings for big cluster
+    echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
+    echo 500 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
+    echo 20000 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
 
     # Enable bus-dcvs
     for device in /sys/devices/platform/soc
@@ -2944,15 +2899,6 @@ case "$target" in
             panel=${panel:2:4}
         fi
 
-        if [ $KernelVersionA -ge 4 ] && [ $KernelVersionB -le 14 ]; then
-            if [ $panel -gt 1080 ]; then
-                echo 2 > /proc/sys/kernel/sched_window_stats_policy
-                echo 5 > /proc/sys/kernel/sched_ravg_hist_size
-            else
-                echo 3 > /proc/sys/kernel/sched_window_stats_policy
-                echo 3 > /proc/sys/kernel/sched_ravg_hist_size
-            fi
-        fi
         #Apply settings for sdm660, sdm636,sda636
         case "$soc_id" in
                 "317" | "324" | "325" | "326" | "345" | "346" )
