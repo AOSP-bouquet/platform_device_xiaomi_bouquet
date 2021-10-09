@@ -122,8 +122,6 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-SELINUX_IGNORE_NEVERALLOWS := true
-SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
