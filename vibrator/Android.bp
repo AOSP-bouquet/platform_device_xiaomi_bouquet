@@ -14,7 +14,7 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "vendor.qti.hardware.vibrator.impl.xiaomi_whyred",
+    name: "vendor.qti.hardware.vibrator.impl.xiaomi_sdm660",
     vendor: true,
     cflags: Common_CFlags,
     srcs: [
@@ -32,12 +32,12 @@ cc_library_shared {
 }
 
 cc_binary {
-    name: "vendor.qti.hardware.vibrator.service.xiaomi_whyred",
+    name: "vendor.qti.hardware.vibrator.service.xiaomi_sdm660",
     vendor: true,
     relative_install_path: "hw",
-    init_rc: ["vendor.qti.hardware.vibrator.service.xiaomi_whyred.rc"],
+    init_rc: ["vendor.qti.hardware.vibrator.service.xiaomi_sdm660.rc"],
     vintf_fragments: [
-        "vendor.qti.hardware.vibrator.service.xiaomi_whyred.xml",
+        "vendor.qti.hardware.vibrator.service.xiaomi_sdm660.xml",
     ],
     cflags: Common_CFlags,
     srcs: [
@@ -49,6 +49,6 @@ cc_binary {
         "libbase",
         "libbinder_ndk",
         "android.hardware.vibrator-ndk_platform",
-        "vendor.qti.hardware.vibrator.impl.xiaomi_whyred",
+        "vendor.qti.hardware.vibrator.impl.xiaomi_sdm660",
     ],
 }

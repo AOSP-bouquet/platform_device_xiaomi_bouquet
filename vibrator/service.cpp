@@ -27,7 +27,7 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#define LOG_TAG "vendor.qti.hardware.vibrator.service.xiaomi_whyred"
+#define LOG_TAG "vendor.qti.hardware.vibrator.service.xiaomi_sdm660"
 
 #include <android-base/logging.h>
 #include <android/binder_manager.h>

@@ -388,11 +388,11 @@ PRODUCT_PACKAGES += \
 
 # Usb
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.whyred
+    android.hardware.usb@1.0-service.xiaomi_sdm660
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.xiaomi_whyred
+    vendor.qti.hardware.vibrator.service.xiaomi_sdm660
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
