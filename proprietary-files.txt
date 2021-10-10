@@ -152,7 +152,7 @@ product/framework/dpmapi.jar:system_ext/framework/dpmapi.jar|4696df9793ad676b305
 product/lib64/com.qualcomm.qti.dpm.api@1.0.so:system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|a763bb1bbeecb84723bff6f547a3b23fab68dee3
 product/lib64/libdpmctmgr.so:system_ext/lib64/libdpmctmgr.so|3d4b87a4937caf3a8d276f48a4f0dc2cad246c5b
 product/lib64/libdpmfdmgr.so:system_ext/lib64/libdpmfdmgr.so|e809155312a05d83b323ab0be64cb393d936e52a
-product/lib64/libdpmframework.so:system_ext/lib64/libdpmframework.so|dad2493b5d4f42078713066130b0703af449c82f
+product/lib64/libdpmframework.so:system_ext/lib64/libdpmframework.so|8fd037eb8740a468a67c78e7fa01c69b1ba3fd2a|dad2493b5d4f42078713066130b0703af449c82f
 product/lib64/libdpmtcm.so:system_ext/lib64/libdpmtcm.so|71a3d624602807f6fa6cbdb3a489efe9e93de634
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk:system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
 vendor/bin/dpmQmiMgr|d536096b310a2d3f30a683c1bdcad8658db1ba52
@@ -253,15 +253,15 @@ vendor/lib64/libhdr_tm.so|1e74de5b505c8f742f1fb0379725ec9f5fd53282
 
 # Graphics (SDM) - from jasmine
 vendor/lib/libqseed3.so|f1c5c5e2db7cf1bf1cd6782af3476ec721c525e7
-vendor/lib/libsdm-color.so|4491e856ca951100ef85909406546233277745a8
+vendor/lib/libsdm-color.so|2856bf71af603076b23d4c206dacba7c82350387
 vendor/lib/libsdm-diag.so|b1813c5639553537ccda31b2e44b5d4a85eb2adc
-vendor/lib/libsdmextension.so|5bad498cb0c6e2fb23b7a1b2b5deb551933318c4
+vendor/lib/libsdmextension.so|37d5fca198c8e8526d6a4cb95f9c4bdf719e0efd
 vendor/lib/libtinyxml2_1.so|f54f81359c78715315bc24678c34c129413e6c92
 vendor/lib64/libqseed3.so|24ae4dfe5d9fa27a858b64dfafd1c713da6e6fde
-vendor/lib64/libsdm-color.so|fef2b577d7aa5e69122f49b45c3f5185e41b3d9d
+vendor/lib64/libsdm-color.so|ed022cfcc1546c11b82991986e0a938464400858
 vendor/lib64/libsdm-diag.so|6eb99b83036f917070393fa067eaebc50a5ff307
 vendor/lib64/libsdm-disp-vndapis.so|ba4978c373f9892d884d07c4cf25dba9d73fda1f
-vendor/lib64/libsdmextension.so|1578d885acc4cc0a1dc941363c61cb95052c4d32
+vendor/lib64/libsdmextension.so|264c00a0920d291700b2948b9337037684986921
 vendor/lib64/libtinyxml2_1.so|ba981e332895a053a67fc54a8190365a3ad37f2d
 
 # Graphics (Vulkan) - from taimen RP1A.201005.004
