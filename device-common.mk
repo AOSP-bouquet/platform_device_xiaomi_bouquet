@@ -188,6 +188,10 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl \
     vendor.display.config@1.1
 
+# Display Device Config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/displayconfig/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
