@@ -17,6 +17,23 @@ ro.config.low_ram=false
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
+# Pixelmask
+ro.product.product.brand=google
+ro.product.product.device=raven
+ro.product.product.manufacturer=Google
+ro.product.product.model=Pixel 6 Pro
+ro.product.product.name=raven
+ro.product.build.date=Thu Oct 28 08:47:15 UTC 2021
+ro.product.build.date.utc=1635410835
+ro.product.build.fingerprint=google/raven/raven:12/SD1A.210817.037/7862242:user/release-keys
+ro.product.build.id=SD1A.210817.037
+ro.product.build.tags=release-keys
+ro.product.build.type=user
+ro.product.build.version.incremental=7862242
+ro.product.build.version.release=12
+ro.product.build.version.release_or_codename=12
+ro.product.build.version.sdk=31
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.vendor.ims.disableADBLogs=1
