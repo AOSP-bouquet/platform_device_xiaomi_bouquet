@@ -239,5 +239,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Disable Rescue Party on userdebug & eng build
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.disable_rescue=true
+    persist.sys.disable_rescue=true \
+    persist.sys.binary_xml=false
 endif
