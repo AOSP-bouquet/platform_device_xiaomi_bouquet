@@ -28,6 +28,9 @@ ril.subscription.types=RUIM
 # Shutdown
 ro.build.shutdown_timeout=2
 
+# System
+persist.sys.binary_xml=false
+
 # Time
 persist.vendor.delta_time.enable=true
 
