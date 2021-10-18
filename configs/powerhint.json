@@ -115,6 +115,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "PMQoSCpuDmaLatency",
+      "Path": "/dev/cpu_dma_latency",
+      "Values": [
+        "0x0000002b",
+        "0x00000064"
+      ],
+      "HoldFd": true
+    },
+    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -202,6 +211,12 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 5000,
+      "Value": "0x0000002b"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 5000,
       "Value": "0"
@@ -235,6 +250,18 @@
       "Node": "GPUIdleTimer",
       "Duration": 5000,
       "Value": "10000"
+    },
+    {
+      "PowerHint": "AUDIO_LAUNCH",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 0,
+      "Value": "0x0000002b"
+    },
+    {
+      "PowerHint": "AUDIO_STREAMING",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 2000,
+      "Value": "0x0000002b"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
