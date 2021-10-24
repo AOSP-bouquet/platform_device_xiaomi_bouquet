@@ -94,7 +94,8 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.configfs=true \
     androidboot.usbcontroller=a800000.dwc3 \
     loop.max_part=7 \
-    kpti=off
+    kpti=off \
+    androidboot.theme=1
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
