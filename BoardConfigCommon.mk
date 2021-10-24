@@ -42,7 +42,8 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.usbcontroller=a800000.dwc3 \
     loop.max_part=7 \
     usbcore.autosuspend=7\
-    kpti=off
+    kpti=off \
+    androidboot.theme=1
 
 # HOLY CTS LORDS - Don't patch plz google
 BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=green
