@@ -9,5 +9,8 @@ allow init adsprpcd_file:file mounton;
 allow init debugfs_tracing_debug:dir { mounton };
 allow vendor_init proc:file w_file_perms;
 
+dontaudit init logcat_exec:file { getattr };
+dontaudit vendor_init cache_file:dir { search };
+
 set_prop(vendor_init, camera_prop)
 set_prop(vendor_init, vendor_power_prop)
