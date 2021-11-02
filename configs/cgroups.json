@@ -1,22 +1,8 @@
 {
   "Cgroups": [
     {
-      "Controller": "blkio",
-      "Path": "/dev/blkio",
-      "Mode": "0755",
-      "UID": "system",
-      "GID": "system"
-    },
-    {
-      "Controller": "cpu",
-      "Path": "/dev/cpuctl",
-      "Mode": "0755",
-      "UID": "system",
-      "GID": "system"
-    },
-    {
-      "Controller": "cpuset",
-      "Path": "/dev/cpuset",
+      "Controller": "schedtune",
+      "Path": "/dev/stune",
       "Mode": "0755",
       "UID": "system",
       "GID": "system"
