@@ -2383,29 +2383,21 @@ case "$target" in
             echo 0-3 > /dev/cpuset/restricted/cpus
 
             # Uclamp tunables
-            echo max > /dev/cpuctl/top-app/cpu.uclamp.max
-            echo 20  > /dev/cpuctl/top-app/cpu.uclamp.min
-            echo 1   > /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive
+            echo max > /dev/cpuctl/top-app/uclamp.max
+            echo 20  > /dev/cpuctl/top-app/uclamp.min
+            echo 1   > /dev/cpuctl/top-app/uclamp.latency_sensitive
 
-            echo 50 > /dev/cpuctl/foreground/cpu.uclamp.max
-            echo 20 > /dev/cpuctl/foreground/cpu.uclamp.min
-            echo 0  > /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive
+            echo 50 > /dev/cpuctl/foreground/uclamp.max
+            echo 20 > /dev/cpuctl/foreground/uclamp.min
+            echo 0  > /dev/cpuctl/foreground/uclamp.latency_sensitive
 
-            echo max > /dev/cpuctl/background/cpu.uclamp.max
-            echo 20  > /dev/cpuctl/background/cpu.uclamp.min
-            echo 0   > /dev/cpuctl/background/cpu.uclamp.latency_sensitive
+            echo max > /dev/cpuctl/background/uclamp.max
+            echo 20  > /dev/cpuctl/background/uclamp.min
+            echo 0   > /dev/cpuctl/background/uclamp.latency_sensitive
 
-            echo 40 > /dev/cpuctl/system-background/cpu.uclamp.max
-            echo 10 > /dev/cpuctl/system-background/cpu.uclamp.min
-            echo 0  > /dev/cpuctl/system-background/cpu.uclamp.latency_sensitive
-
-            echo 0 > /dev/cpuctl/nnapi-hal/cpu.uclamp.max
-            echo 0 > /dev/cpuctl/nnapi-hal/cpu.uclamp.min
-            echo 0 > /dev/cpuctl/nnapi-hal/cpu.uclamp.latency_sensitive
-
-            echo 20 > /dev/cpuctl/rt/cpu.uclamp.max
-            echo 0  > /dev/cpuctl/rt/cpu.uclamp.min
-            echo 0  > /dev/cpuctl/rt/cpu.uclamp.latency_sensitive
+            echo 50 > /dev/cpuctl/system-background/uclamp.max
+            echo 10 > /dev/cpuctl/system-background/uclamp.min
+            echo 0  > /dev/cpuctl/system-background/uclamp.latency_sensitive
 
             # disable thermal bcl hotplug to switch governor
             echo 0 > /sys/module/msm_thermal/core_control/enabled
