@@ -35,8 +35,6 @@ BOARD_KERNEL_CMDLINE += usbcore.autosuspend=7
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CLANG_COMPILE := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -46,7 +44,7 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
+USE_CUSTOM_AUDIO_POLICY := 0
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := false
@@ -70,12 +68,6 @@ TARGET_ENABLE_MEDIADRM_64 := true
 
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
-
-# FM
-ifeq ($(BOARD_HAVE_QCOM_FM),true)
-AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
-BOARD_HAS_QCA_FM_SOC := cherokee
-endif
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
@@ -123,10 +115,7 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+include device/xiaomi/sdm660-sepolicy/SEPolicy.mk
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
