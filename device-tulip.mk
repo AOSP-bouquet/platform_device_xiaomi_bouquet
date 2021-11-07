@@ -15,9 +15,6 @@ LOCAL_PATH := device/xiaomi/sdm660-common
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-# Inherit properties.mk
-$(call inherit-product, $(LOCAL_PATH)/tulip/properties.mk)
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tulip/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
