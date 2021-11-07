@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter whyred,$(TARGET_DEVICE)),)
+ifneq ($(filter whyred tulip,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 
