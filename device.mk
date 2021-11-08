@@ -190,10 +190,6 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl \
     vendor.display.config@1.1
 
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
