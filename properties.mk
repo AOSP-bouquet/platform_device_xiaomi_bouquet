@@ -136,7 +136,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.renderengine.backend=skiaglthreaded \
     debug.sf.disable_backpressure=1 \
     debug.sf.disable_client_composition_cache=1 \
-    debug.sf.enable_gl_backpressure=1 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
     vendor.gralloc.disable_ubwc=0 \
