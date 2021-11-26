@@ -5,11 +5,11 @@
 //
 
 cc_binary {
-    name: "android.hardware.biometrics.fingerprint@2.1-service.whyred",
+    name: "android.hardware.biometrics.fingerprint@2.1-service.bouquet",
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.whyred.rc"],
-    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.whyred.xml"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.bouquet.rc"],
+    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.bouquet.xml"],
     srcs: ["service.cpp", "BiometricsFingerprint.cpp"],
     shared_libs: [
         "libbase",

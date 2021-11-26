@@ -7,7 +7,7 @@
 
 // Author := dev_harsh1998, Isaac Chen
 
-#define LOG_TAG "android.hardware.light@2.0-impl.whyred"
+#define LOG_TAG "android.hardware.light@2.0-impl.bouquet"
 /* #define LOG_NDEBUG 0 */
 
 #include "Light.h"

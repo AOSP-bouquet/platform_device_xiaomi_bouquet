@@ -29,11 +29,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 # Inherit some common HentaiOS stuff
 $(call inherit-product, vendor/hentai/build/product/hentai_product.mk)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Inherit from whyred device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, $(LOCAL_PATH)/device-whyred.mk)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
