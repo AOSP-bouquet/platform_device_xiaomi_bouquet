@@ -75,6 +75,10 @@ system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
 # Bluetooth (Configstore) - from ginkgo V12.5.1.0.RCOCNXM
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|fc6265cb719afac0ff0bf6722d7f4cb4b408fd7b
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|e953e79c7faaa7693baf8db51f90e0a0279caf1d
+vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so|6f5554c2ec838f0bd9eb0952ec6bd441be781c53
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|871c0c27124ccbc7a0b318b33052c434d2a36506
+vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so|09c3c0effa473b79149df65bd23c5c09e6b4f8ed
 
 # Bluetooth (SAR) - from ginkgo V12.5.1.0.RCOCNXM
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|624ac893ea428a29df50336f6fe08879b1bb5c21
