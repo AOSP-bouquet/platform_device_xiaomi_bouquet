@@ -396,11 +396,10 @@ PRODUCT_PACKAGES += \
     libtflite
 
 # Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.qti
+include hardware/google/pixel/thermal/device.mk
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+    $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
 # USB
 PRODUCT_PACKAGES += \
