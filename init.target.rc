@@ -182,6 +182,11 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-send-rule stream 0660 system system
    group root
 
+service vendor.thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-engine.conf
+   class main
+   user root
+   group root
+
 #service security-check1 /sbin/security_boot_check system
 #    class core
 #    oneshot
