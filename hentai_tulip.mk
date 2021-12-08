@@ -29,7 +29,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 $(call inherit-product, vendor/hentai/build/product/hentai_product.mk)
 
 # Inherit from tulip device
-$(call inherit-product, device/xiaomi/bouquet/device-tulip.mk)
+$(call inherit-product, $(LOCAL_PATH)/device-tulip.mk)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := tulip

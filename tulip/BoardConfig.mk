@@ -25,7 +25,7 @@
 # Inherit from bouquet
 include device/xiaomi/bouquet/BoardConfig-common.mk
 
-LOCAL_PATH := device/xiaomi/bouquet
+LOCAL_PATH := device/xiaomi/bouquet/tulip
 
 # AVB
 BOARD_AVB_ENABLE := false
@@ -41,16 +41,16 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_DENSITY := 440
 
 # Manifest
-DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/tulip/manifest_tulip.xml
+DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/manifest_tulip.xml
 
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
 
 # Properties
-TARGET_VENDOR_PROP += $(LOCAL_PATH)/tulip/vendor.prop
+TARGET_VENDOR_PROP += $(LOCAL_PATH)/vendor.prop
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/tulip/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/fstab.qcom
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
