@@ -39,6 +39,9 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/whyred/overlay
 
+PRODUCT_PACKAGES += \
+    SystemUIGoogleOverlayWhyred
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/whyred/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
