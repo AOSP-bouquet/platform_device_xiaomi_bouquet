@@ -83,6 +83,7 @@ DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(LOCAL_PATH)/compatibility_matrix.xml
 
 # Kernel
+include device/xiaomi/bouquet-kernel/BoardConfigKernel.mk
 BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \
     user_debug=31 \
