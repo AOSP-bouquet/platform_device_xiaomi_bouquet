@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.cellbroadcastreceiver.overlay.bouquet">
+    <overlay
+        android:isStatic="true"
+        android:targetName="CellBroadcastCustomization"
+        android:targetPackage="com.google.android.cellbroadcastreceiver"/>
+
+    <application
+        android:hasCode="false"/>
+
+</manifest>
