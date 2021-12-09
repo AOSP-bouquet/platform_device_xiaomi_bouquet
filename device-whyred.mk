@@ -14,12 +14,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/whyred/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/whyred/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
-# Kernel
-LOCAL_KERNEL := device/xiaomi/bouquet-kernel/whyred-Image.gz-dtb
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
-
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayWhyred \
