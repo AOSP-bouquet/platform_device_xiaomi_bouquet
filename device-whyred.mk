@@ -36,10 +36,8 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/whyred/overlay
-
 PRODUCT_PACKAGES += \
+    FrameworkResOverlayWhyred \
     SystemUIGoogleOverlayWhyred
 
 # Ramdisk

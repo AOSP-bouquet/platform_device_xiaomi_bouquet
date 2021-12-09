@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.providers.settings.bouquet">
+    <application
+        android:hasCode="false" />
+    <overlay
+        android:isStatic="true"
+        android:targetPackage="com.android.providers.settings" />
+</manifest>
