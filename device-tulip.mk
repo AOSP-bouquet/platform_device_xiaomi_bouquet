@@ -28,12 +28,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tulip/qdcm_calib_data_shenchao_nt36672a_fhdplus_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_shenchao_nt36672a_fhdplus_video_mode_dsi_panel.xml \
     $(LOCAL_PATH)/tulip/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml
 
-# Kernel
-LOCAL_KERNEL := device/xiaomi/bouquet-kernel/tulip-Image.gz-dtb
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
-
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayTulip \
