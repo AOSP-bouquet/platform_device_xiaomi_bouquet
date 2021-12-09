@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.overlay.tulip">
+    <application
+        android:label="FrameworkResOverlayTulip"
+        android:hasCode="false" />
+
+    <overlay
+        android:targetPackage="android"
+        android:isStatic="true"
+        android:priority="1000" />
+</manifest>

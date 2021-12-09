@@ -24,10 +24,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/whyred/overlay
-
 PRODUCT_PACKAGES += \
+    FrameworkResOverlayWhyred \
     SystemUIGoogleOverlayWhyred
 
 # Ramdisk
