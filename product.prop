@@ -17,6 +17,14 @@ ro.config.low_ram=false
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
+# Pixelmask
+ro.build.fingerprint=google/redfin/redfin:12/SQ1A.220205.002/8010174:user/release-keys
+ro.product.brand=google
+ro.product.device=redfin
+ro.product.manufacturer=Google
+ro.product.model=Pixel 5
+ro.product.name=redfin
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.vendor.ims.disableADBLogs=1
