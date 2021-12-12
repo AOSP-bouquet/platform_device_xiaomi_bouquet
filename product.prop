@@ -31,6 +31,9 @@ ro.build.shutdown_timeout=2
 # System
 persist.sys.binary_xml=false
 
+# Theme
+ro.boot.theme=1
+
 # Time
 persist.vendor.delta_time.enable=true
 
