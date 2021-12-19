@@ -123,10 +123,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
-# ATRACE_HAL
-PRODUCT_PACKAGES += \
-    android.hardware.atrace@1.0-service
-
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.bouquet
@@ -321,6 +317,18 @@ PRODUCT_PACKAGES += \
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
+
+# Pixel Common
+PRODUCT_COPY_FILES += \
+      hardware/google/pixel/common/init.pixel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.pixel.rc
+
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service.pixel \
+    dmabuf_dump \
+    misc_writer
+
+# Pixel mm_event
+$(call inherit-product, hardware/google/pixel/mm/device.mk)
 
 # Power
 PRODUCT_PACKAGES += \
