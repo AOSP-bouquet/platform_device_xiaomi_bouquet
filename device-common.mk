@@ -16,6 +16,7 @@ $(call inherit-product, $(LOCAL_PATH)/utils.mk)
 PRODUCT_PACKAGES += \
     CellBroadcastReceiverOverlayBouquet \
     FrameworkResOverlayBouquet \
+    HentaiWallpaperRed \
     SettingsGoogleOverlayBouquet \
     SettingsProviderOverlayBouquet \
     SystemUIGoogleOverlayBouquet \
