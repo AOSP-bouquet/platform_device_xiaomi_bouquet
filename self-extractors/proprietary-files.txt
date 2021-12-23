@@ -337,6 +337,12 @@ vendor/lib64/hw/vulkan.sdm660.so|785505bf473e486cd7ce1a034ccba46381830a6e
 vendor/lib/libtinyxml.so|b5652d2bb1d9bb7feb553cc80333ed2d5906e21e
 vendor/lib64/libtinyxml.so|65608bcb8c661761a47cfb52b822904fe1444a0d
 
+# HotwordEnrollment - from gourami sq1a.220205.002-Furry.02091536
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|f6eb7df4e0320d71750b8476bf6293096c7a0499
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|ecc1679cd0b58698fcf31e46ba449397b6e4820a
+-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
+-system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
+
 # IRQ balance from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
 vendor/bin/msm_irqbalance|2ac477da6216b8bf616db5a205dac4059b6d73a4
 
