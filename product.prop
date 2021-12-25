@@ -42,9 +42,6 @@ ril.subscription.types=RUIM
 # Shutdown
 ro.build.shutdown_timeout=2
 
-# System
-persist.sys.binary_xml=false
-
 # Theme
 ro.boot.theme=1
 
