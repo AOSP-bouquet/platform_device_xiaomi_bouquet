@@ -93,7 +93,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Display
 debug.renderengine.backend=skiaglthreaded
-debug.sf.disable_backpressure=1
+debug.sf.disable_backpressure=0
 debug.sf.early.sf.duration=16000000
 debug.sf.early.app.duration=16500000
 debug.sf.earlyGl.sf.duration=13500000
