@@ -329,7 +329,7 @@ PRODUCT_PACKAGES += \
     misc_writer
 
 # Pixel mm_event
-$(call inherit-product, hardware/google/pixel/mm/device.mk)
+include hardware/google/pixel/mm/device.mk
 
 # Power
 PRODUCT_PACKAGES += \
@@ -404,7 +404,7 @@ PRODUCT_PACKAGES += \
     libtflite
 
 # Thermal
-$(call inherit-product, hardware/google/pixel/thermal/device.mk)
+include hardware/google/pixel/thermal/device.mk
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
