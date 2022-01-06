@@ -12,9 +12,6 @@ $(call inherit-product, device/xiaomi/bouquet/device-common.mk)
 
 LOCAL_PATH := device/xiaomi/bouquet
 
-# Inherit properties.mk
-$(call inherit-product, $(LOCAL_PATH)/tulip/properties.mk)
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tulip/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \

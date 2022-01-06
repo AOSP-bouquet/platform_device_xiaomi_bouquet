@@ -12,6 +12,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Utils
 $(call inherit-product, $(LOCAL_PATH)/utils.mk)
 
+# Inherit properties.mk
+$(call inherit-product, $(LOCAL_PATH)/properties.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     CellBroadcastReceiverOverlayBouquet \
@@ -191,19 +194,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     vendor.display.config@1.1
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.mdpcomp.logs=0 \
-    vendor.gralloc.disable_ubwc=0 \
-    vendor.display.disable_scaler=0 \
-    vendor.display.disable_excl_rect=0 \
-    vendor.display.disable_excl_rect_partial_fb=1 \
-    vendor.display.comp_mask=0 \
-    vendor.display.enable_posted_start_dyn=1 \
-    vendor.display.enable_optimize_refresh=1 \
-    vendor.display.use_smooth_motion=1 \
-    vendor.display.enable_camera_smooth=1 \
-    vendor.display.enable_async_powermode=0
-
 # Display Device Config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/displayconfig/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
@@ -366,13 +356,6 @@ PRODUCT_COPY_FILES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
-
-# Disable Rescue Party on userdebug & eng build
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.disable_rescue=true \
-    persist.sys.binary_xml=false
-endif
 
 # RIL
 PRODUCT_PACKAGES += \
