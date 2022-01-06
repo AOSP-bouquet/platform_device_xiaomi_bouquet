@@ -12,6 +12,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Utils
 $(call inherit-product, $(LOCAL_PATH)/utils.mk)
 
+# Inherit properties.mk
+$(call inherit-product, $(LOCAL_PATH)/properties.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     CellBroadcastReceiverOverlayBouquet \
