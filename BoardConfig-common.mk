@@ -121,10 +121,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Properties
-TARGET_ODM_PROP := $(LOCAL_PATH)/odm.prop
 TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
-TARGET_SYSTEM_EXT_PROP := $(LOCAL_PATH)/system_ext.prop
-TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
 # SELinux
 include device/xiaomi/bouquet-sepolicy/SEPolicy.mk

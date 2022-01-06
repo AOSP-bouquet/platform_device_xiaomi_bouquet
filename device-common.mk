@@ -12,6 +12,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Utils
 $(call inherit-product, $(LOCAL_PATH)/utils.mk)
 
+# Inherit properties.mk
+$(call inherit-product, $(LOCAL_PATH)/properties.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     CellBroadcastReceiverOverlayBouquet \
@@ -357,13 +360,6 @@ PRODUCT_COPY_FILES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
-
-# Disable Rescue Party on userdebug & eng build
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.disable_rescue=true \
-    persist.sys.binary_xml=false
-endif
 
 # RIL
 PRODUCT_PACKAGES += \
