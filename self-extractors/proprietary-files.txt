@@ -343,6 +343,9 @@ vendor/lib64/hw/vulkan.sdm660.so|785505bf473e486cd7ce1a034ccba46381830a6e
 vendor/lib/libtinyxml.so
 vendor/lib64/libtinyxml.so
 
+# IRQ balance from citrus V12.0.1.0.QJFMIXM
+vendor/bin/msm_irqbalance|dd8e65dae1f2f8ec1beb72f7115621f301eab85d
+
 # Keymaster - from S62Pro RKQ1.210406.002
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|002c638011b1936fecaa896874d3361ec68eaa46
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d

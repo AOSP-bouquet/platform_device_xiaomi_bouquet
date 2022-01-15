@@ -153,3 +153,10 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     user system
     group system wakelock
     capabilities BLOCK_SUSPEND WAKE_ALARM
+
+service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
+    socket msm_irqbalance seqpacket 660 root system
+    class core
+    user root
+    group root
+    task_profiles ServiceCapacityLow
