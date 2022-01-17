@@ -75,5 +75,8 @@ ro.boot.theme=1
 # Time
 persist.vendor.delta_time.enable=true
 
+# Watchdog
+ro.hw_timeout_multiplier=3
+
 # WFD
 persist.debug.wfd.enable=0
