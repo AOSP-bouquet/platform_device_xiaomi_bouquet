@@ -16,7 +16,6 @@ ro.incremental.enable=1
 
 # LMKD
 ro.config.low_ram=false
-ro.lmk.log_stats = true
 
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
