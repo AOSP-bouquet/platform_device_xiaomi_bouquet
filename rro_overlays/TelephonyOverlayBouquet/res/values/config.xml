@@ -22,6 +22,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- String indicating the package name of the device ImsService implementation for RCS -->
-    <string name="config_ims_rcs_package">vendor.qti.imsrcs</string>
+    <!-- String indicating the package name of the device ImsService implementation for RCS. -->
+    <string name="config_ims_rcs_package">com.android.service.ims</string>
+
 </resources>
