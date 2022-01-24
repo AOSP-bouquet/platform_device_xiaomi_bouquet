@@ -204,6 +204,10 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti.vendor
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
 # GPS / Location
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
@@ -277,6 +281,10 @@ PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/bouquet-kernel/sdm660/kernel-head
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
