@@ -125,6 +125,9 @@ include device/xiaomi/bouquet-sepolicy/SEPolicy.mk
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
+# Ramdisk
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/fstab.qcom
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
