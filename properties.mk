@@ -145,21 +145,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.idle_time=32767 \
     vendor.gralloc.enable_fb_ubwc=1
 
-# Display props from redfin
+# Display props from trinket
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.hw=1 \
+    persist.demo.hdmirotationlock=false \
+    persist.sys.sf.color_saturation=1.0 \
+    debug.sf.hw=0 \
+    debug.egl.hw=0 \
     debug.mdpcomp.logs=0 \
     vendor.gralloc.disable_ubwc=0 \
     vendor.display.disable_scaler=0 \
+    vendor.display.disable_inline_rotator=1 \
+    vendor.display.disable_decimation=1 \
+    vendor.display.enable_null_display=0 \
     vendor.display.disable_excl_rect=0 \
     vendor.display.disable_excl_rect_partial_fb=1 \
     vendor.display.comp_mask=0 \
-    vendor.display.enable_posted_start_dyn=1 \
+    vendor.display.enable_default_color_mode=1 \
     vendor.display.enable_optimize_refresh=1 \
-    vendor.display.use_smooth_motion=1 \
-    vendor.display.enable_camera_smooth=1 \
-    vendor.display.disable_offline_rotator=1 \
-    vendor.display.enable_async_powermode=0
+    vendor.display.disable_ui_3d_tonemap=1
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
