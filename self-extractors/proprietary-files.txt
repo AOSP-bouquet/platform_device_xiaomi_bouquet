@@ -169,8 +169,8 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|b17a82a9740832bd686c3d4c4e36d0e
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|07bf28004086b972367c44703bd0247d7a78faf4
 vendor/lib64/vendor.qti.latency@2.0.so|dfec90dd5d12f653bb6067702682b5f610a83b67
 
-# Consumerir
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so
+# Consumerir - from jasmine V11.0.28.0.QDIMIXM
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so|ad5c1c43bd7af8828efa20b7435f756d85a813b5
 
 # DPM - from ginkgo V12.5.1.0.RCOCNXM
 system_ext/bin/dpmd|0f22b5229c85007681abd3f6d81a41a7f32462a7
@@ -338,9 +338,9 @@ vendor/lib64/libtinyxml2_1.so|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
 vendor/lib/hw/vulkan.sdm660.so|404862c00279f222b1a9277bf773a96a605ba99b
 vendor/lib64/hw/vulkan.sdm660.so|785505bf473e486cd7ce1a034ccba46381830a6e
 
-# Graphics - Prebuilt
-vendor/lib/libtinyxml.so
-vendor/lib64/libtinyxml.so
+# Graphics - from Edwin's LineageOS
+vendor/lib/libtinyxml.so|b5652d2bb1d9bb7feb553cc80333ed2d5906e21e
+vendor/lib64/libtinyxml.so|65608bcb8c661761a47cfb52b822904fe1444a0d
 
 # IRQ balance from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
 vendor/bin/msm_irqbalance|2ac477da6216b8bf616db5a205dac4059b6d73a4
