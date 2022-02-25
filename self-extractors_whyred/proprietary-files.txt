@@ -649,6 +649,10 @@ vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|4b1ebc2cdfa327850776afdebe2235e97815c71d
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 
+# Gatekeeper
+vendor/lib/hw/gatekeeper.sdm660.so
+vendor/lib64/hw/gatekeeper.sdm660.so
+
 # Graphics firmware
 vendor/firmware/a512_zap.b00
 vendor/firmware/a512_zap.b01
@@ -658,6 +662,10 @@ vendor/firmware/a512_zap.mdt
 vendor/firmware/a530_pfp.fw
 vendor/firmware/a530_pm4.fw
 vendor/firmware/a540_gpmu.fw2
+
+# Keystore
+vendor/lib/hw/keystore.sdm660.so
+vendor/lib64/hw/keystore.sdm660.so
 
 # Sensors
 vendor/etc/sensors/sensor_def_qcomdev.conf
