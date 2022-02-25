@@ -120,13 +120,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=SDM660
 
-# Crypto
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.crypto.dm_default_key.options_format.version=2 \
-    ro.crypto.volume.filenames_mode=aes-256-cts \
-    ro.crypto.volume.metadata.method=dm-default-key \
-    ro.crypto.volume.options=::v2
-
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
