@@ -655,3 +655,7 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
 # Start after the device booted
 on property:sys.boot_completed=1
     enable vendor.msm_irqbalance
+
+on property:persist.sys.device_provisioned=1
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
+    setprop dalvik.vm.dex2oat-threads 6
