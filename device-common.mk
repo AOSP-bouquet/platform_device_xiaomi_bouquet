@@ -17,13 +17,10 @@ $(call inherit-product, $(LOCAL_PATH)/properties.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
-    CellBroadcastReceiverOverlayBouquet \
     FrameworkResOverlayBouquet \
     HentaiWallpaperRed \
     SettingsGoogleOverlayBouquet \
-    SettingsProviderOverlayBouquet \
     SystemUIGoogleOverlayBouquet \
-    TelephonyOverlayBouquet \
     WifiOverlayBouquet
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
