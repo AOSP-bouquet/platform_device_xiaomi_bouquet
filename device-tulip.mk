@@ -18,5 +18,10 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlayTulip \
     SystemUIGoogleTulip
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@3.0.vendor
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/tulip/tulip-vendor.mk)
