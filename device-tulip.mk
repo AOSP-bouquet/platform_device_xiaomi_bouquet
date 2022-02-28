@@ -25,6 +25,11 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlayTulip \
     SystemUIGoogleTulip
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@3.0.vendor
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tulip/init.tulip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.device.rc
