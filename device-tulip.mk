@@ -9,6 +9,10 @@ $(call inherit-product, device/xiaomi/bouquet/device-common.mk)
 
 LOCAL_PATH := device/xiaomi/bouquet
 
+# Camera
+PRODUCT_PACKAGES += \
+    libcamera_shim
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayTulip \
