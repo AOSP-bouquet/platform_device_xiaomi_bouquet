@@ -92,9 +92,6 @@ on property:init.svc.vendor.charger=running
     start vendor.power_off_alarm
 
 on enable-low-power
-    # Reinit lmkd to reconfigure lmkd properties
-    setprop lmkd.reinit 1
-
     # Enable EAS
     write /proc/sys/kernel/sched_energy_aware 1
 
