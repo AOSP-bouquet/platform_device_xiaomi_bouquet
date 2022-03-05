@@ -21,9 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayBouquet \
-    HentaiWallpaperRed \
-    SettingsGoogleOverlayBouquet \
-    SystemUIGoogleOverlayBouquet \
+    SettingsOverlayBouquet \
+    SystemUIOverlayBouquet \
     WifiOverlayBouquet
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -362,7 +361,7 @@ PRODUCT_COPY_FILES += \
 
 # Preopt packages
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle
+    SystemUI
 
 # Protobuf
 PRODUCT_PACKAGES += \

@@ -15,7 +15,7 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIGoogleOverlayWhyred",
+    name: "SystemUIOverlayBouquet",
     certificate: "platform",
     sdk_version: "current",
     product_specific: true
