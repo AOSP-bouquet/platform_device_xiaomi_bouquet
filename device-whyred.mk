@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayWhyred \
-    SystemUIGoogleOverlayWhyred
+    SystemUIOverlayWhyred
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
