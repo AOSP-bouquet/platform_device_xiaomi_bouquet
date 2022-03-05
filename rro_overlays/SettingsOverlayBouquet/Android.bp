@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "SettingsGoogleOverlayBouquet",
+    name: "SettingsOverlayBouquet",
     sdk_version: "current",
     product_specific: true,
 }

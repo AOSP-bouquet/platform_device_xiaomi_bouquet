@@ -18,9 +18,7 @@ $(call inherit-product, $(LOCAL_PATH)/properties.mk)
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayBouquet \
-    HentaiWallpaperRed \
-    SettingsGoogleOverlayBouquet \
-    SystemUIGoogleOverlayBouquet \
+    SettingsOverlayBouquet \
     WifiOverlayBouquet
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -354,7 +352,7 @@ PRODUCT_COPY_FILES += \
 
 # Preopt packages
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle
+    SystemUI
 
 # Protobuf
 PRODUCT_PACKAGES += \
