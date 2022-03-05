@@ -24,6 +24,7 @@ PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 
 # Overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlayBouquet \
     FrameworkResOverlayBouquet \
     SettingsOverlayBouquet \
     SystemUIOverlayBouquet \
