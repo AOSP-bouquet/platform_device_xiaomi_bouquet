@@ -17,6 +17,7 @@ $(call inherit-product, $(LOCAL_PATH)/properties.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlayBouquet \
     FrameworkResOverlayBouquet \
     SettingsOverlayBouquet \
     WifiOverlayBouquet
