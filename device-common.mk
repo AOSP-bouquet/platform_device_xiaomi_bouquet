@@ -299,7 +299,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.bouquet
+    android.hardware.light-service.bouquet
 
 # Media
 PRODUCT_COPY_FILES += \
