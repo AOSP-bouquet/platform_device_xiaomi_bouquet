@@ -8,6 +8,7 @@ cc_binary {
     defaults: ["hidl_defaults"],
     name: "android.hardware.light@2.0-service.bouquet",
     init_rc: ["hidl/android.hardware.light@2.0-service.bouquet.rc"],
+    vintf_fragments: ["hidl/android.hardware.light@2.0-service.bouquet.xml"],
     srcs: ["hidl/service.cpp", "hidl/Light.cpp"],
     shared_libs: [
         "libbase",
@@ -20,10 +21,10 @@ cc_binary {
 }
 
 cc_binary {
-    name: "android.hardware.lights-service.xiaomi_sdm660",
+    name: "android.hardware.lights-service.bouquet",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.lights.xiaomi_sdm660.rc"],
-    vintf_fragments: ["aidl/android.hardware.lights.xiaomi_sdm660.xml"],
+    init_rc: ["aidl/android.hardware.lights.bouquet.rc"],
+    vintf_fragments: ["aidl/android.hardware.lights.bouquet.xml"],
     vendor: true,
     shared_libs: [
         "libbase",
