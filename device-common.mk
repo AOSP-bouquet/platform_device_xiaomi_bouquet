@@ -33,7 +33,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/qcom-caf/sdm660/gps
+    hardware/qcom/sdm660/gps \
+    hardware/qcom/sdm660/display \
+    hardware/qcom/sdm660/audio \
+    hardware/qcom/sdm660/media
 
 # Permissions
 PRODUCT_COPY_FILES += \
