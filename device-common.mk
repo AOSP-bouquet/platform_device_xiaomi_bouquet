@@ -15,6 +15,11 @@ $(call inherit-product, $(LOCAL_PATH)/utils.mk)
 # Inherit properties.mk
 $(call inherit-product, $(LOCAL_PATH)/properties.mk)
 
+# Signing build
+PRODUCT_HOST_PACKAGES += \
+    sign_target_files_apks \
+    ota_from_target_files
+
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayBouquet \
