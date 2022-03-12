@@ -15,6 +15,9 @@ $(call inherit-product, $(LOCAL_PATH)/utils.mk)
 # Inherit properties.mk
 $(call inherit-product, $(LOCAL_PATH)/properties.mk)
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayBouquet \
