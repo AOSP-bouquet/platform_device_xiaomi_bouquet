@@ -256,7 +256,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBWMinFreq",
       "Duration": 0,
-      "Value": "4943"
+      "Value": "3879"
     },
     {
       "PowerHint": "LAUNCH",
