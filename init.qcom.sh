@@ -462,3 +462,13 @@ case "$buildvariant" in
         echo "4 4 1 4" > /proc/sys/kernel/printk
         ;;
 esac
+
+# Zram size config
+MemTotalStr=`cat /proc/meminfo | grep MemTotal`
+RamSizeGB=`echo "($MemTotal / 1048576 ) + 1" | bc`
+
+if [ $RamSizeGB -le 3 ]; then
+    setprop persist.vendor.zram.size 2g
+else
+    setprop persist.vendor.zram.size 3g
+fi

@@ -368,6 +368,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/fstab.zram.2g:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram.2g \
+    $(LOCAL_PATH)/fstab.zram.3g:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram.3g
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
