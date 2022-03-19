@@ -638,6 +638,9 @@ vendor/bin/time_daemon|48401d7f85c87aa3e12ce7b4a969a50cbf59c293
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|8bb116ad297a5e4a94da2f10509509cb6e863a5f
 
+# Thermal - from sunfish TPP2.220218.010
+vendor/bin/thermal-engine|eb93e3d082ed29978b3d9be3e385ba8ea65eec93
+
 # Thermal - from barbet S2B2.211203.006
 -vendor/lib64/libthermalclient.so|0a12301d1557583db10f730d1d3cced841448b99
 
