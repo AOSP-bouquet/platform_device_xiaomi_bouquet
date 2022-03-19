@@ -119,6 +119,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Properties
 TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 
+# Ramdisk
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/fstab.qcom
+
 # SELinux
 include device/xiaomi/bouquet-sepolicy/SEPolicy.mk
 
