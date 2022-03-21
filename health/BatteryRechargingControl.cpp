@@ -17,8 +17,8 @@
 #include "BatteryRechargingControl.h"
 
 namespace device {
-namespace google {
-namespace bonito {
+namespace xiaomi {
+namespace bouquet {
 namespace health {
 
 static const std::string kChargerStatus = "sys/class/power_supply/battery/status";
@@ -170,6 +170,6 @@ void BatteryRechargingControl::updateBatteryProperties(struct android::BatteryPr
 }
 
 }  // namespace health
-}  // namespace bonito
-}  // namespace google
+}  // namespace bouquet
+}  // namespace xiaomi
 }  // namespace device

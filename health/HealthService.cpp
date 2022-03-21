@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.health@2.0-service.bonito"
+#define LOG_TAG "android.hardware.health@2.0-service.bouquet"
 #include <android-base/file.h>
 #include <android-base/logging.h>
 #include <android-base/parseint.h>
@@ -43,9 +43,9 @@ namespace {
 using android::hardware::health::V2_0::DiskStats;
 using android::hardware::health::V2_0::StorageAttribute;
 using android::hardware::health::V2_0::StorageInfo;
-using ::device::google::bonito::health::BatteryRechargingControl;
-using ::device::google::bonito::health::BatteryInfoUpdate;
-using ::device::google::bonito::health::LearnedCapacityBackupRestore;
+using ::device::xiaomi::bouquet::health::BatteryRechargingControl;
+using ::device::xiaomi::bouquet::health::BatteryInfoUpdate;
+using ::device::xiaomi::bouquet::health::LearnedCapacityBackupRestore;
 using hardware::google::pixel::health::BatteryDefender;
 using hardware::google::pixel::health::BatteryMetricsLogger;
 using hardware::google::pixel::health::BatteryThermalControl;
@@ -70,7 +70,7 @@ static CycleCountBackupRestore ccBackupRestoreBMS(
 static DeviceHealth deviceHealth;
 static LearnedCapacityBackupRestore lcBackupRestore;
 
-#define EMMC_DIR "/sys/devices/platform/soc/7c4000.sdhci"
+#define EMMC_DIR "/sys/devices/platform/soc/c0c4000.sdhci"
 const std::string kEmmcHealthEol{EMMC_DIR "/health/eol"};
 const std::string kEmmcHealthLifetimeA{EMMC_DIR "/health/lifetimeA"};
 const std::string kEmmcHealthLifetimeB{EMMC_DIR "/health/lifetimeB"};

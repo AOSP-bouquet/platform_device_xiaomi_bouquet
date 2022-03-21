@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-#ifndef DEVICE_GOOGLE_BONITO_HEALTH_BATTERYINFOUPDATE_H
-#define DEVICE_GOOGLE_BONITO_HEALTH_BATTERYINFOUPDATE_H
+#ifndef DEVICE_XIAOMI_BOUQUET_HEALTH_BATTERYINFOUPDATE_H
+#define DEVICE_XIAOMI_BOUQUET_HEALTH_BATTERYINFOUPDATE_H
 
 #include <batteryservice/BatteryService.h>
 
 namespace device {
-namespace google {
-namespace bonito {
+namespace xiaomi {
+namespace bouquet {
 namespace health {
 
 class BatteryInfoUpdate {
@@ -33,8 +33,8 @@ class BatteryInfoUpdate {
 };
 
 }  // namespace health
-}  // namespace bonito
-}  // namespace google
+}  // namespace bouquet
+}  // namespace xiaomi
 }  // namespace device
 
-#endif // #ifndef DEVICE_GOOGLE_BONITO_HEALTH_BATTERYINFOUPDATE_H
+#endif // #ifndef DEVICE_XIAOMI_BOUQUET_HEALTH_BATTERYINFOUPDATE_H

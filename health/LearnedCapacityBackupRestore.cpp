@@ -17,8 +17,8 @@
 #include "LearnedCapacityBackupRestore.h"
 
 namespace device {
-namespace google {
-namespace bonito {
+namespace xiaomi {
+namespace bouquet {
 namespace health {
 
 static constexpr char kChgFullDesignFile[] = "sys/class/power_supply/bms/charge_full_design";
@@ -128,6 +128,6 @@ void LearnedCapacityBackupRestore::UpdateAndSave() {
 }
 
 }  // namespace health
-}  // namespace bonito
-}  // namespace google
+}  // namespace bouquet
+}  // namespace xiaomi
 }  // namespace device

@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#ifndef DEVICE_GOOGLE_BONITO_HEALTH_LEARNEDCAPACITYBACKUPRESTORE_H
-#define DEVICE_GOOGLE_BONITO_HEALTH_LEARNEDCAPACITYBACKUPRESTORE_H
+#ifndef DEVICE_XIAOMI_BOUQUET_HEALTH_LEARNEDCAPACITYBACKUPRESTORE_H
+#define DEVICE_XIAOMI_BOUQUET_HEALTH_LEARNEDCAPACITYBACKUPRESTORE_H
 
 #include <android-base/file.h>
 #include <android-base/logging.h>
@@ -23,8 +23,8 @@
 #include <string>
 
 namespace device {
-namespace google {
-namespace bonito {
+namespace xiaomi {
+namespace bouquet {
 namespace health {
 
 class LearnedCapacityBackupRestore {
@@ -47,8 +47,8 @@ class LearnedCapacityBackupRestore {
 };
 
 }  // namespace health
-}  // namespace bonito
-}  // namespace google
+}  // namespace bouquet
+}  // namespace xiaomi
 }  // namespace device
 
-#endif  // #ifndef DEVICE_GOOGLE_BONITO_HEALTH_LEARNEDCAPACITYBACKUPRESTORE_H
+#endif  // #ifndef DEVICE_XIAOMI_BOUQUET_HEALTH_LEARNEDCAPACITYBACKUPRESTORE_H

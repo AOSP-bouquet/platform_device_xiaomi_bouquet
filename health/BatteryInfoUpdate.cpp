@@ -21,8 +21,8 @@
 #include <android-base/properties.h>
 
 namespace device {
-namespace google {
-namespace bonito {
+namespace xiaomi {
+namespace bouquet {
 namespace health {
 
 BatteryInfoUpdate::BatteryInfoUpdate() {
@@ -35,7 +35,7 @@ void BatteryInfoUpdate::update(struct android::BatteryProperties *props) {
 }
 
 }  // namespace health
-}  // namespace bonito
-}  // namespace google
+}  // namespace bouquet
+}  // namespace xiaomi
 }  // namespace device
 
