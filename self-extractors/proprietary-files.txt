@@ -1,21 +1,21 @@
 # jasmine package version: V11.0.13.0.QDIMIXM, unless stated otherwise
 
-# ADSP - from S62Pro RKQ1.210406.002
+# ADSP - from LA.UM.9.2.1.r1-08700-sdm660.0
 vendor/bin/adsprpcd|5e246a6f5d2dca27e29b233a17e4673532191b95
 vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
-vendor/lib/libadsp_default_listener.so|c822c536d9776ca2d60bf5a158531544f20c4829
+vendor/lib/libadsp_default_listener.so|fca7bb26dc4f16d29eb9fe8373f6679de72143e4
 vendor/lib/libadsprpc.so|3da7471cbfb2f26bb997d21098282697ee1965e4
 vendor/lib/libcdsprpc.so|4ef30602663e13d44e1c7dd09db927fa4e6947ae
-vendor/lib/libfastcvopt.so|4f4a2297c4071c3b22b967000ecc1f4ea1b9d203
+vendor/lib/libfastcvopt.so|3d39db85c2102cba15eac2db06027464518f7704
 vendor/lib/libmdsprpc.so|50380552c78713d9678978b6654c20401b5040f6
 vendor/lib/libsdsprpc.so|dcff191dcb9af4cc6f9a54c4eca6664bf6f965a4
-vendor/lib64/libadsp_default_listener.so|41f91a64209c0431d87cee08999c5cfdc5dedb38
+vendor/lib64/libadsp_default_listener.so|f4738e7bf0d5205e9d3b5e290a931d03d2ef700d
 vendor/lib64/libadsprpc.so|14348488a9d8a30f6787d5b11bf4d4857d23e58e
 vendor/lib64/libcdsprpc.so|891066a404b155c545ff7f4bf23cb7e042f29f28
 vendor/lib64/libmdsprpc.so|d0252bb9747bb90cbb7e8788a9906ecbed44cb60
 vendor/lib64/libsdsprpc.so|58ee0bd2d4b5c40afeb7d654dd020f09676fe9d9
 
-# ADSP modules - from S62Pro RKQ1.210406.002
+# ADSP modules - from LA.UM.9.2.1.r1-08700-sdm660.0
 vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
 vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so|c240d45c3a5fc37b964c4adab06f4cb0bfda62f5
 vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
@@ -33,25 +33,25 @@ vendor/lib/rfsa/adsp/libscveT2T_skel.so|e8083e551a17e880acb9d72ceb725b762cadf0d2
 vendor/lib/rfsa/adsp/dirac_resource.dar|7728d5b2ee2927a01df5bd6d7edae3736186c844
 vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
 
-# Alarm - from S62Pro RKQ1.210406.002
--product/app/PowerOffAlarm/PowerOffAlarm.apk|52e403ee5944bbb6c6952efa2814d98bd5bb8b17
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|586b142f9bc4bf3098b4962682c4de1c13810f9b
+# Alarm - from LA.UM.9.2.1.r1-08700-sdm660.0
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|bc906abd03e4a243201dde626b6580fd8a4f73ce
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|5ba29f35f2f5966f791a3cb3ce4ca7223fb4a781
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|4129558506dc078c03679ba362acda4755457742
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so|dcfdc04b4e0c6e6a4ffa60e1694268bd0327e65c
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|afe7ec1c463d3ac73556ba2f6baf4cdd27ea9f65
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|98de2df06987d1daeb7b908b17a4c4662edfd464
 
-# Audio - from S62Pro RKQ1.210406.002
+# Audio - from LA.UM.9.2.1.r1-08700-sdm660.0
 vendor/lib/soundfx/libasphere.so|90940fca6f4b84794046513c6c6868eca9470066
-vendor/lib/soundfx/libqcbassboost.so|8e92c5d40cd23f503840b055d71336e4c9daecc0
-vendor/lib/soundfx/libqcreverb.so|7e05f1f4bdd2947dac3aefd871437d289581078b
-vendor/lib/soundfx/libqcvirt.so|03a8b95eb77811e3861307ab1451f4144bba2572
-vendor/lib/libacdb-fts.so|96db6fe2e443326705a37ac6e2e394f03144a386
-vendor/lib/libacdbloader.so|4d0743fe7f3eb1d2318feafc06363ffb527ca942
-vendor/lib/libacdbrtac.so|b6484ac64f20c4a0f605fb4901d33b8b27a95a74
-vendor/lib/libadiertac.so|b0a0ebc89be729e37fe34ceaa05f97a1bc9560a6
+vendor/lib/soundfx/libqcbassboost.so|aac5bea9960c11c55034cea185727578f77dd99f
+vendor/lib/soundfx/libqcreverb.so|43351be2315d6f5abe56bb04ccde694fc8c9c973
+vendor/lib/soundfx/libqcvirt.so|275210f123115e4812ab7fa6b1b0da0cc23bceb9
+vendor/lib/libacdb-fts.so|1ce39838d5ee69351a8db9a372f93f9e77c10463
+vendor/lib/libacdbloader.so|23e1e82463485f009d046b629f8c842cddb3aa1c
+vendor/lib/libacdbrtac.so|c6600d5687da47a1324502cae1cdd42cd14e612d
+vendor/lib/libadiertac.so|794ca29a369cb17e8f8c03e13b9dbf437f6a0f8c
 vendor/lib/libadm.so|2fd429c8066572cc49262fe0d452c78706197d54
-vendor/lib/libaudcal.so|5361c538d20634221c317851c33b0842ced93fca
-vendor/lib/libqtigef.so|977cbb704f6b2bae7f4e2f17b8c15146a6cacffb
+vendor/lib/libaudcal.so|ceeed3a8bc13d70198c7c1e6190d8ebf71828b7d
+vendor/lib/libqtigef.so|b3818773c4ce4e1737e2a9d75df10a03f376c57b
 
 # Bluetooth - from ginkgo V12.5.1.0.RCOCNXM
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|c2ea0d91006c5a12efa07d42cae47b3008124571
@@ -86,8 +86,8 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|624ac893ea428a29df
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|64de735684377aba4a33a3bb0bee25f7999bafcd
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|32c763b353882c9a711a641ff9eb99fe1b0e164d
 
-# Charger - from S62Pro RKQ1.210406.002
-vendor/bin/hvdcp_opti|0af1d3a59fd10acd7a614662c341421d9267014c
+# Charger - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/bin/hvdcp_opti|45f500aa4816c87de222ee7eb33655f0e83e392c
 
 # CNE (system) - from LA.QSSI.12.0.r1-04900-xx-qssi.0
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar|ed72cda387e7b589b5f18a74de1bc5ef422dcde4
@@ -198,21 +198,21 @@ vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|c5c893e86d38b8aa8cd277ccb8b011fb2f19995e
 vendor/lib64/libdpmqmihal.so|ffcd85e1f6bf7d54f37953edc2cb2c4a61fc894a
 
-# DRM - from S62Pro RKQ1.210406.002
-vendor/bin/qseecomd|97eeb3f297d16e0364e73f8e78ccb7a07e70f093
+# DRM - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/bin/qseecomd|1b7bb6650273aa8ba6b9cb35c07621c0ce6cd205
 vendor/lib/libQSEEComAPI.so|14d85d1661f11fed27a99f618370de21abfbf1b9
 vendor/lib/libsdedrm.so|752fa74723368e6bde29cbf004fe31d6f33ceb97
 vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
 vendor/lib64/libGPreqcancel_svc.so|5369bb41c214c0bd3782438c0488cd2dba8cb667
 vendor/lib64/libQSEEComAPI.so|7ad0a71938c1de5dbb54a52fb68285ac08f0a130
 vendor/lib64/libSecureUILib.so|b98555b76083a897fc9bbfc27778750d2d47817a
-vendor/lib64/libStDrvInt.so|6091f1f496b87730f9a77e9ede504c4fa99c608a
-vendor/lib64/libdrmfs.so|d01f7964b64bfabd56afea030a2e874f5b3af266
+vendor/lib64/libStDrvInt.so|7d30e8bc95084a0d851f163e07df5dc0450a59b6
+vendor/lib64/libdrmfs.so|ea7579f3b12ac04488b09d879e15d038ae50334e
 vendor/lib64/libdrmtime.so|9aca2a5224378365232933b06a742a2498dd7468
 vendor/lib64/libqisl.so|c79719eebc094c2af9561e8df2c158638b111b70
 vendor/lib64/librpmb.so|eac8411b60e4842b0fee4c9145dd9cdc3e24a67e
 vendor/lib64/libsdedrm.so|f02d7bef5f9fa3f1265b5a8b3b8ab481a4cedee2
-vendor/lib64/libsecureui_svcsock.so|6af612f057f4f28720d6db9b300b58c883da6539
+vendor/lib64/libsecureui_svcsock.so|49b55f29397d2b429740a96cba44473a3446daa3
 vendor/lib64/libssd.so|774488b88c37053067b3cad551ac95360c03edd3
 
 # DRM - Widevine - from S62Pro RKQ1.210406.002
@@ -225,12 +225,12 @@ vendor/lib64/libcpion.so|80d7e010395b3ead01b70435584dfa11afbb52bf
 vendor/lib64/librmp.so|6392e70196f5a6da2d49a1aaec60f06ca378f1c4
 vendor/lib64/libwvhidl.so|acf4870a0b10af74a40a4c6180f2c10a1706ddbd
 
-# DSP - from S62Pro RKQ1.210406.002
-vendor/bin/dspservice|a8eb76af6150bbf29c12b76b00ab469b99f563f7
+# DSP - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/bin/dspservice|f194ad65a930f1ac1a7fdfefc637c0531d185e89
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
-vendor/lib/vendor.qti.hardware.dsp@1.0.so|f902e821229cd1fff50ebfba99b0a068cbf74a56
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so|223a9268bd92bd80dab3df02fbef38ea86bcbadd
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|7a7063f4a216ccc9e0a9f32e553824cf603f85d4
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|f6844db3b071937ef914f0e21fd17f19905ae662
 
 # FM (system) - from LA.QSSI.12.0.r1-04900-xx-qssi.0
 system_ext/lib64/fm_helium.so|dd0aa17b1b5d0cbce34d6d6343dc49883c5bfe73
@@ -241,45 +241,45 @@ system_ext/lib64/vendor.qti.hardware.fm@1.0.so|e4bcec96323017d33e11739519481b156
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|f23a4efc7baa2bcab560e8fda02b9afad3e82d51
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|ee02e7e7a7c474822f575fc76eb3fe6205ffde53
 
-# GPS - from ginkgo V12.5.1.0.RCOCNXM
-vendor/bin/garden_app|4f61dffac228425593cb5c108cb02b28a5f37c72
-vendor/bin/loc_launcher|fe6f061abe050d8884a0a49967ad89596065952d
-vendor/bin/lowi-server|e3cc615760cd28dbbe37dcfd783e789640cf0050
-vendor/bin/xtra-daemon|11f399e038c3ec35edf01da2b85d21f3e45b9cf9
+# GPS - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/bin/garden_app|8c8de33593f382a97be7502008a964e2ca06855d
+vendor/bin/loc_launcher|0d65b13f2c08d706f4ab443946e730ea5fd34530
+vendor/bin/lowi-server|9be2cee6faeb277914f675988608dcaaa0bac1ba
+vendor/bin/xtra-daemon|ddff70f2355f3dde3fbc3970d873c5ebfea81f9c
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
 vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
-vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|ecbf4afff44a8d805b3551008630d2574cb5a15c
-vendor/lib64/libaoa.so|691fc6b749f266b0f8272dc1cb9f1889c344ceef
-vendor/lib64/libcacertclient.so|90281ef665d6a66ad7aa0806d97c20866fe1a83d
-vendor/lib64/libcdfw.so|8d8265215a10c09390038c905fd7967081fbbffb
-vendor/lib64/libcdfw_remote_api.so|dc7deb7618f05907ecfd2c3004bb3e0c39ec8522
-vendor/lib64/libdataitems.so|d130d5f6f2ebac7697feecd707d8f76302db1d6a
-vendor/lib64/libgarden.so|2786c28ecd8e598f839449b593a876d400dda3c7
-vendor/lib64/libgarden_haltests_e2e.so|6a0f226af4a4e4fd7233da9adbfb5c976baf4b00
-vendor/lib64/libgdtap.so|016814ded1880cc6d720d816a130887a5c5ac7d7
-vendor/lib64/libgnsspps.so|99fb257077a2a656449cf88fcec867f18342a826
-vendor/lib64/libizat_client_api.so|1a6f274cafcd9d6d37e74f42dacdb14f755b2eee
-vendor/lib64/libizat_core.so|c67475f3bcd5e8fd7f6482bcb1e09b0ac02931c1
-vendor/lib64/liblbs_core.so|c6b595efd270f19188eccbc2f63f6a795a62156a
-vendor/lib64/libloc_api_v02.so|2cd87b938a432fc712297f0e32cd85b90cdfa749
-vendor/lib64/libloc_socket.so|656a3e422c454809444ece65ec786f510605b267
-vendor/lib64/liblocationservice.so|168adeb8e21f5f47de91e7726050d4434bc67591
-vendor/lib64/liblocationservice_glue.so|8927d0005b570e7b0fbd76bf9084c6abfb1bf451
-vendor/lib64/liblowi_client.so|6eae21e006b730e1fb5303d35518f4298bf47475
-vendor/lib64/liblowi_wifihal.so|776ef2f1ca775e418e4e60f984558c77fc420158
-vendor/lib64/libqcc_file_agent.so|ddfc0babc52ab12b6b159b36505bc0b5ef460a0a
-vendor/lib64/libxtadapter.so|689ea3eb00dd64dfd9b81f9ef1d67150ccb3eafc
-vendor/lib64/vendor.qti.gnss@1.0.so|42a334848284231ed109bb2d192efba50aa0c4ea
-vendor/lib64/vendor.qti.gnss@1.1.so|6139f24a0d14a86d354f8f812bfbd92614e9b950
-vendor/lib64/vendor.qti.gnss@1.2.so|89aefad7c76feaac5153fbef9506d0c1329c67b0
-vendor/lib64/vendor.qti.gnss@2.0.so|9d8c3e35e9764a5120b18863349cd83ea3dca69a
-vendor/lib64/vendor.qti.gnss@2.1.so|b064e33255930f2556a813f292725867bdff26e2
-vendor/lib64/vendor.qti.gnss@3.0.so|e111fe9f0cb9c997f656534a6e633a778aacac94
-vendor/lib64/vendor.qti.gnss@4.0-service.so|ab0c3d4fe0cd4ee67cb0ae7c2863f345cf7c752b
-vendor/lib64/vendor.qti.gnss@4.0.so|52ffbefd6f81333aec4abe8b836a446ee091539d
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so|398e5510db4d739de008b7230aa6e688d6c51a8a
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|19a1f7ffb8118c207aa8cb2318996605771c339a
+vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|26173de548e1cb24ce94360a5bf02e908dcaf91d
+vendor/lib64/libaoa.so|60cfefed02f528f3e0f70015b0f4f1938abcd00c
+vendor/lib64/libcacertclient.so|69ae73b9be13507ff39398ac5813ad709b8b7c32
+vendor/lib64/libcdfw.so|543b8282f4b6719113f04e14dd908137521e2bb5
+vendor/lib64/libcdfw_remote_api.so|558636f4fa4c17f29cb644c8c6e07766b7240005
+vendor/lib64/libdataitems.so|c105ec65f64bcdcb2f966a20c2f07c72c0cbdef6
+vendor/lib64/libgarden.so|80af42071a177f81fc79319bc95a6502d8551279
+vendor/lib64/libgarden_haltests_e2e.so|8cfb246e280655b36151a1004e358f0ea8dc0503
+vendor/lib64/libgdtap.so|b46b7f6caaf2c2d4f43ed263bcdff3edfdc9f0f1
+vendor/lib64/libgnsspps.so|73aaeab40edc5bb3a394c59ca9ea388420673663
+vendor/lib64/libizat_client_api.so|cb5aa90f3374747ad2b5d90d0b9bb675de81990c
+vendor/lib64/libizat_core.so|d45b75be3e4e6bcd26793cb4325b696165b68c2a
+vendor/lib64/liblbs_core.so|d19d67e6023c964efe1446fdc9a8e1f287703de0
+vendor/lib64/libloc_api_v02.so|7648a63402274c73caab9a4531df7444aac0cbb7
+vendor/lib64/libloc_socket.so|37e0275b8a61eef6d46bd70491323c3552833c09
+vendor/lib64/liblocationservice.so|984a4eaaaeaac3bbc4bd7b51efdac116b2a322fa
+vendor/lib64/liblocationservice_glue.so|5a5f46deabf8d931ccccd7dbe3bc999e5e8981f4
+vendor/lib64/liblowi_client.so|4cd9c849a5f781e1c2c5da7a5eb88d766847b203
+vendor/lib64/liblowi_wifihal.so|41da421546ce0db553029c206bfbdabd670f9190
+vendor/lib64/libqcc_file_agent.so|3707206276c3f8a37d0ab6ee7b2360b5bffe2b3e
+vendor/lib64/libxtadapter.so|44bbd8cd9b6f429e22d0e36b4c96727163eaa317
+vendor/lib64/vendor.qti.gnss@1.0.so|5925d6f4224dbc50af9098e05cba35850e2bf9b6
+vendor/lib64/vendor.qti.gnss@1.1.so|78ca9f2ac57a7dbae6c955fd4a6f5bb468424b17
+vendor/lib64/vendor.qti.gnss@1.2.so|fde298ae7cbc5b3959dece50841792cdff6f3a78
+vendor/lib64/vendor.qti.gnss@2.0.so|4efb2f505ed360973c942d83f5a2b5457421f8b4
+vendor/lib64/vendor.qti.gnss@2.1.so|911eeb49f79ef866be3a98540f8267e3427bf486
+vendor/lib64/vendor.qti.gnss@3.0.so|b957688dcbc4096531cd20cd82aba1e951bffcf3
+vendor/lib64/vendor.qti.gnss@4.0-service.so|e2961bfef700d055110ae4d032c16ffeee998bc7
+vendor/lib64/vendor.qti.gnss@4.0.so|ca337c9bd8d8de330c0f2b61c7b658b04823627b
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so|1633c31212d1ea9338b79ebfc2476f83424f36ee
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|3ff445db2dd2db1a1068fe70a54a6c04fbdd3123
 
 # Graphics - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/lib/egl/eglSubDriverAndroid.so|e72aefcf9fa50a01f53558ea7886e2d70b3a57a9
@@ -350,54 +350,54 @@ vendor/lib64/libtinyxml.so|65608bcb8c661761a47cfb52b822904fe1444a0d
 -system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
 
-# IRQ balance from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
+# IRQ balance - from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
 vendor/bin/msm_irqbalance|2ac477da6216b8bf616db5a205dac4059b6d73a4
 
-# Keymaster - from S62Pro RKQ1.210406.002
+# Keymaster - from LA.UM.9.2.1.r1-08700-sdm660.0
 vendor/lib/libkeymasterdeviceutils.so|a0de8c0055d2cfac9202d8eef88854c1e9795ff4
 vendor/lib/libkeymasterprovision.so|c16328226bb07371a4928906bd70888bbee27895
-vendor/lib/libkeymasterutils.so|a2f7e894af47c33c8bf700b5a1e0a676196affde
+vendor/lib/libkeymasterutils.so|f53700b912f017910a6d97348877a97b4cc6df47
 vendor/lib64/libkeymasterdeviceutils.so|6fd0b0e1b30c4e6c5272794896306596880c657b
 vendor/lib64/libkeymasterprovision.so|d6c95d3543c707df133d50764f647e5f07adb82b
-vendor/lib64/libkeymasterutils.so|2392abef423c0610d9625670f1ff3063532e9bc1
+vendor/lib64/libkeymasterutils.so|987314a722c4f69061fc2c2be1ecd6e7f1b8e38c
 
-# Listen - from S62Pro RKQ1.210406.002
-vendor/lib/hw/sound_trigger.primary.sdm660.so|5464b9658c9b819e18f3ad6703471278521a79d1
+# Listen - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/lib/hw/sound_trigger.primary.sdm660.so|a631c27bd3fe9150c84c134a422eaddee20753a8
 vendor/lib/libadpcmdec.so|b3ec2cc197b682aa6ae7e1da9c8f25cc1aa75750
-vendor/lib/libgcs-calwrapper.so|a80d1d6b0b6e76083b0ca98d690c5cb46e113904
-vendor/lib/libgcs-ipc.so|177f711fc9e01970ef17e9f8a79776ef31d8c973
-vendor/lib/libgcs-osal.so|413c0b9b767d8aa1da477f89b162d5b13604e0cf
-vendor/lib/libgcs.so|136b036d645ce31c3265cf2aed00c472ecec37e4
-vendor/lib/liblistensoundmodel2.so|375948b769905112429ae4fb2979be0b1e363950
-vendor/lib/libsmwrapper.so|0fbf611c9a597f7c70bfd2363dfc7f465d1dafd5
+vendor/lib/libgcs-calwrapper.so|f7fc56da43e70b7b68f0c3168db93f3537d38d1a
+vendor/lib/libgcs-ipc.so|4953d2a0cfb6ab0c9e083ddccd225761cb0dffe8
+vendor/lib/libgcs-osal.so|2f94817cccf6934d1ac315ef348b421dc46695bd
+vendor/lib/libgcs.so|402e5dd3612bb994ca553742b69aba36d25bef35
+vendor/lib/liblistensoundmodel2.so|296bf47af4d22e24bc09a2980ad3deea14dc163c
+vendor/lib/libsmwrapper.so|ad54f2b714f90d5b34000ac118bbd68d98d43dea
 
-# Media - from S62Pro RKQ1.210406.002
+# Media - from LA.UM.9.2.1.r1-08700-sdm660.0
 lib/libFileMux.so|22005fb1595b2b76e199b82ff3790c1bc3d54a20
 lib/libOmxMux.so|66ccc804301bccfbd17afb39a60131dd1a3fa9bc
-system_ext/lib/libmmosal.so|d6e37a06ba103cd55208d74c32be47cea84d4009
-system_ext/lib/libmmparser_lite.so|bc55c2911e7283992c8c2c67f651577743430fb6
-system_ext/lib64/libmmosal.so|d0f37596108fb90b129edec4c6e8ba3648733498
+system_ext/lib/libmmosal.so|518bd8f203cb3283d547bccf5658d89d181ccda8
+system_ext/lib/libmmparser_lite.so|7264378fe6f12ef8a66d8ce1d970dcf1664b6e2d
+system_ext/lib64/libmmosal.so|b69ccdcbb441dc7d4fdd4c1cbc39d3cb69ca9441
 vendor/lib/libAlacSwDec.so|3a6d7dae2808dbe111ff4449b4e1e82560466ef3
 vendor/lib/libApeSwDec.so|ff14ad2ebbabcd89278830d817e9aa6bdcb1799a
 vendor/lib/libFlacSwDec.so|707dbc6b5d2890dc3bba22c00b372f0973baebda
 vendor/lib/libI420colorconvert.so|c8e9a1fb33ae50f5b29c892c6edca2f7d9524af5
-vendor/lib/libOmxAacDec.so|3bcfed25d66aab024faf8dbb9a06ce98270c24b6
-vendor/lib/libOmxAlacDec.so|183cda27aaf922689c557cd9a76b68938e1748c9
+vendor/lib/libOmxAacDec.so|3aefdfc28c16714aad600af87e98b8ac6776af2b
+vendor/lib/libOmxAlacDec.so|ae70ae03370da8db0bfb8fc02c6622f580c8d30a
 vendor/lib/libOmxAlacDecSw.so|ff4b38dbead17dcd0c9a045f109fa4e92ca2992a
-vendor/lib/libOmxAmrDec.so|ebe524b6682f7a9460078a1aa2b986c2c3430b68
-vendor/lib/libOmxAmrwbplusDec.so|ac542cb28956ccab59f9491bacebc96f50a80309
-vendor/lib/libOmxApeDec.so|dcde109eb585c194fdd80c1fe2d1b28614cd68a8
+vendor/lib/libOmxAmrDec.so|bb162313c3cdba30a7e923efd9311f09ab2c32db
+vendor/lib/libOmxAmrwbplusDec.so|d5ae0c0ce66dd03ea9214aa18d53b6584ad6df82
+vendor/lib/libOmxApeDec.so|806aefbb63eb25b080d5f3eb169df2c703d94b23
 vendor/lib/libOmxApeDecSw.so|1014274fe2ad40b361a3adecae258161287500dc
 vendor/lib/libOmxDsdDec.so|d265762dfc714d51379a27970b05f325dbe412da
 vendor/lib/libOmxEvrcDec.so|28b401779d9ee45b0e94415faf9ac34c6fd200f0
-vendor/lib/libOmxG711Dec.so|98cd3445efe4cdc5a92672de3e749d71e56f7466
+vendor/lib/libOmxG711Dec.so|88944455ad9dabf483a4d3e1007ff7848434ac10
 vendor/lib/libOmxQcelp13Dec.so|ee6ede27923f04f4bb03b101bbf302e4df782945
 vendor/lib/libOmxVideoDSMode.so|84c632ef31c4dd88c5e08f92ba02e3f29df09b35
-vendor/lib/libOmxWmaDec.so|7fe5458ba5e19cd4c8422e910acbe6a6f6574c94
+vendor/lib/libOmxWmaDec.so|554fde983f3f42eb24f3de2b199667f867f6e2bc
 vendor/lib/libdsd2pcm.so|f9d2f26315764c27137bc375bb85b20fabe66ff9
 vendor/lib/libmm-color-convertor.so|063b3772fb4c5b85877c35a50e667540cde0c7d6
-vendor/lib/libmmosal.so|a2203f5be5dc1ee10d2f5da8f167a46acb0a660e
-vendor/lib64/libmmosal.so|595faff0767dc2bd0a344a98ab65a239bed14826
+vendor/lib/libmmosal.so|8e1f3c46737bdce36de5ed1a3802a1529252959e
+vendor/lib64/libmmosal.so|9a26f1d128f58eda778f6ba6006d1387d86ffb94
 
 # Peripheral - from ginkgo V12.5.1.0.RCOCNXM
 vendor/bin/pm-proxy|8e159d1fb25f5ee24cf94be8534b3bb8891831bc
@@ -621,23 +621,23 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|8555e548d142fad0238e74e57383bb5a65e
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|346a6f516637632cce8297f78227172d54d26040
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161cc1bcf
 
-# Sensors - from S62Pro RKQ1.210406.002
-vendor/bin/sensors.qti|04d11860e030b6176056b6e862b9e4ee9ba2289a
+# Sensors - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/bin/sensors.qti|24adeb307fea4608c6456508b26777e73200daf5
 vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
-vendor/lib/hw/activity_recognition.sdm660.so|005b4c0d3dfd4c2bd4361b8c8754314a8c4de40d
-vendor/lib/libsensor1.so|0b74f64339245b2bb9e08aa97a78bd8d344463c5
-vendor/lib/libsensor_reg.so|40a7b8e675352be825806017766b4fed3a3e128d
-vendor/lib/sensors.ssc.so|7cbe5294892d5b7a514141f6a902f1d9f1b1ca6a
-vendor/lib64/hw/activity_recognition.sdm660.so|d121abfadb5798cdb5620350b7a35322018dd5bb
-vendor/lib64/libsensor1.so|9438649176e37dfa406f4d4858ad31441ad4c3aa
-vendor/lib64/libsensor_reg.so|c09110fd11f384040c31b7fd5c2b187aa901168c
-vendor/lib64/sensors.ssc.so|6934f0fd9e5e74356d9f18af0cbaa28164e697f6
+vendor/lib/hw/activity_recognition.sdm660.so|4ac9b374771e413df940368f3d3554a579032929
+vendor/lib/libsensor1.so|7ebf30c9434b66d954488b663aff7d09d0b93976
+vendor/lib/libsensor_reg.so|4e941b4750c3d9cfecfbc551a64cbf919b61de9a
+vendor/lib/sensors.ssc.so|9539e4854dde0b74e5635eff0cfd58a5cb7224db
+vendor/lib64/hw/activity_recognition.sdm660.so|b7f635465aaa4ddfb91ba21231c1d61a5f309a7d
+vendor/lib64/libsensor1.so|bba8ecb3e09a45f63eb4ee376c7aacb04f6f7cd7
+vendor/lib64/libsensor_reg.so|efd0185de8d173f8ec1e8783a4f1d95f38ea0850
+vendor/lib64/sensors.ssc.so|20b150176df8b4f658225521251884fcbac48ef1
 
-# Time services - from S62Pro RKQ1.210406.002
--vendor/app/TimeService/TimeService.apk|88f7c7f4c10f53dfd69cf7828f883d3df82003e7
-vendor/bin/time_daemon|48401d7f85c87aa3e12ce7b4a969a50cbf59c293
+# Time services - from LA.UM.9.2.1.r1-08700-sdm660.0
+-vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
+vendor/bin/time_daemon|f1c59e5fe954fe9cb624b815354f212965e5c54e
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
-vendor/lib64/libtime_genoff.so|8bb116ad297a5e4a94da2f10509509cb6e863a5f
+vendor/lib64/libtime_genoff.so|243aa5db6e516d21d531d215828a5711882d8ab3
 
 # Thermal - from sunfish TPP2.220218.010
 vendor/bin/thermal-engine|eb93e3d082ed29978b3d9be3e385ba8ea65eec93
@@ -645,10 +645,10 @@ vendor/bin/thermal-engine|eb93e3d082ed29978b3d9be3e385ba8ea65eec93
 # Thermal - from barbet S2B2.211203.006
 -vendor/lib64/libthermalclient.so|0a12301d1557583db10f730d1d3cced841448b99
 
-# TUI - from S62Pro RKQ1.210406.002
+# TUI - from LA.UM.9.2.1.r1-08700-sdm660.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|4ba792ee3234dca4cd7ebbd7b3f9003c800f51b4
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|23c3274355745c23e2ef3c7b82c407eafcb301cf
 
 # Wifi - from ginkgo V12.5.1.0.RCOCNXM
 vendor/bin/cnss-daemon|1b840d768c5d49a3a440fffcf526eefa45a7ad5b
