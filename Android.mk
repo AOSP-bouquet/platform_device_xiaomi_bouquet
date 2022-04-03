@@ -6,9 +6,15 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter jasmine_sprout jason lavender platina twolip wayne whyred,$(TARGET_DEVICE)),)
+ifneq ($(filter whyred tulip,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
+
+# copy kernel headers to the build tree
+$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard $(PRODUCT_VENDOR_KERNEL_HEADERS)/*)
+	rm -rf $@
+	mkdir -p $@/include
+	cp -a $(PRODUCT_VENDOR_KERNEL_HEADERS)/. $@/include
 
 WCNSS_INI_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 $(WCNSS_INI_SYMLINK): $(LOCAL_INSTALLED_MODULE)
