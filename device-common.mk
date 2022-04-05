@@ -7,6 +7,10 @@
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# Device properties
+$(call inherit-product, $(LOCAL_PATH)/properties.mk)
+TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
