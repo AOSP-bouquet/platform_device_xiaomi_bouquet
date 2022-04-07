@@ -9,6 +9,21 @@
       "Name": "STunePreferIdle",
       "Controller": "schedtune",
       "File": "schedtune.prefer_idle"
+    },
+    {
+      "Name": "UClampMin",
+      "Controller": "cpu",
+      "File": "cpu.uclamp.min"
+    },
+    {
+      "Name": "UClampMax",
+      "Controller": "cpu",
+      "File": "cpu.uclamp.max"
+    },
+    {
+      "Name": "UClampLatencySensitive",
+      "Controller": "cpu",
+      "File": "cpu.uclamp.latency_sensitive"
     }
   ],
   "Profiles": [
