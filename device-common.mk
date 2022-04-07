@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayBouquet \
     FrameworkResOverlayBouquet \
     SettingsOverlayBouquet \
+    TetheringConfigOverlayBouquet \
     WifiOverlayBouquet
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
