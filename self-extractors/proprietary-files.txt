@@ -370,6 +370,8 @@ vendor/lib/libgcs-osal.so|2f94817cccf6934d1ac315ef348b421dc46695bd
 vendor/lib/libgcs.so|402e5dd3612bb994ca553742b69aba36d25bef35
 vendor/lib/liblistensoundmodel2.so|296bf47af4d22e24bc09a2980ad3deea14dc163c
 vendor/lib/libsmwrapper.so|ad54f2b714f90d5b34000ac118bbd68d98d43dea
+vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
+vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
 
 # Media - from LA.UM.9.2.1.r1-08700-sdm660.0
 lib/libFileMux.so|22005fb1595b2b76e199b82ff3790c1bc3d54a20
