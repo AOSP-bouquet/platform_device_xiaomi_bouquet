@@ -533,9 +533,6 @@ on property:sys.boot_completed=1
     # Turn on sleep modes
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
-    # Restart the thermal engine
-    restart vendor.thermal-engine
-
     # Start irqbalance
     enable vendor.msm_irqbalance
 
@@ -899,15 +896,6 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
-
-service vendor.thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-engine.conf
-    class main
-    user root
-    group root
-    socket thermal-send-client stream 0660 system oem_2907
-    socket thermal-recv-client stream 0660 system oem_2907
-    socket thermal-recv-passive-client stream 0660 system oem_2907
-    socket thermal-send-rule stream 0660 system oem_2907
 
 service vendor.charger /system/bin/charger
     class charger

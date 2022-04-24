@@ -11,7 +11,6 @@ vendor/lib/libmdsprpc.so|50380552c78713d9678978b6654c20401b5040f6
 vendor/lib/libsdsprpc.so|dcff191dcb9af4cc6f9a54c4eca6664bf6f965a4
 vendor/lib64/libadsp_default_listener.so|f4738e7bf0d5205e9d3b5e290a931d03d2ef700d
 vendor/lib64/libadsprpc.so|14348488a9d8a30f6787d5b11bf4d4857d23e58e
-vendor/lib64/libcdsprpc.so|891066a404b155c545ff7f4bf23cb7e042f29f28
 vendor/lib64/libmdsprpc.so|d0252bb9747bb90cbb7e8788a9906ecbed44cb60
 vendor/lib64/libsdsprpc.so|58ee0bd2d4b5c40afeb7d654dd020f09676fe9d9
 
@@ -639,9 +638,6 @@ vendor/lib64/sensors.ssc.so|20b150176df8b4f658225521251884fcbac48ef1
 vendor/bin/time_daemon|f1c59e5fe954fe9cb624b815354f212965e5c54e
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|243aa5db6e516d21d531d215828a5711882d8ab3
-
-# Thermal - from sunfish TPP2.220218.010
-vendor/bin/thermal-engine|eb93e3d082ed29978b3d9be3e385ba8ea65eec93
 
 # Thermal - from barbet S2B2.211203.006
 -vendor/lib64/libthermalclient.so|0a12301d1557583db10f730d1d3cced841448b99
