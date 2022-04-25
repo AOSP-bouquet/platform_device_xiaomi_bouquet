@@ -101,7 +101,7 @@ on init
     write /proc/sys/vm/page-cluster 0
 
     # Report max frequency to unity tasks
-    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so,com.miHoYo,libUE4.so,libfb.so"
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so,com.miHoYo,libUE4.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
 
 on fs
