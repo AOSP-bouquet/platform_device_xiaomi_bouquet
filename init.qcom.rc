@@ -66,7 +66,6 @@ on init
 
     # Boot time fs tuning
     write /sys/block/mmcblk0/queue/iostats 0
-    write /sys/block/mmcblk0/queue/scheduler none
     write /sys/block/mmcblk0/queue/iosched/slice_idle 0
     write /sys/block/mmcblk0/queue/nr_requests 256
 
