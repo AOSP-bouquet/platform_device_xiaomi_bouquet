@@ -937,6 +937,7 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/m
     user root
     group root
     disabled
+    writepid /dev/cpuset/system-background/tasks
 
 service boot_lc_main /system/bin/logcat -f /cache/boot_lc_main.txt
     class main
