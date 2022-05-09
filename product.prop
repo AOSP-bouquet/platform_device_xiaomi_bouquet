@@ -45,9 +45,6 @@ ril.subscription.types=RUIM
 # Shutdown
 ro.build.shutdown_timeout=2
 
-# Theme
-ro.boot.theme=1
-
 # Time
 persist.vendor.delta_time.enable=true
 

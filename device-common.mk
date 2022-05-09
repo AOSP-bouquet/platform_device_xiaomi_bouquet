@@ -326,6 +326,10 @@ PRODUCT_PACKAGES += \
     libregistermsext \
     mediametrics
 
+# Misc writer
+PRODUCT_PACKAGES += \
+    misc_writer
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
