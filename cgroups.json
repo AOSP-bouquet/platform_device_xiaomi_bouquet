@@ -7,13 +7,6 @@
       "UID": "system",
       "GID": "system",
       "Optional": true
-    },
-    {
-      "Controller": "cpu",
-      "Path": "/dev/cpuctl",
-      "Mode": "0755",
-      "UID": "system",
-      "GID": "system"
     }
   ]
 }
