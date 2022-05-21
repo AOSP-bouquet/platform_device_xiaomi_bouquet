@@ -80,8 +80,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcom.bluetooth.soc=cherokee \
-    vendor.qcom.bluetooth.soc=cherokee \
-    vendor.bluetooth.soc=cherokee
+    vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -112,10 +111,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vidc.enc.dcvs.extra-buff-count=2 \
     vendor.video.disable.ubwc=1
 
-# Charger
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.charger.enable_suspend=true
-
 # Chipset
 PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI \
@@ -134,7 +129,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     debug.sf.early.app.duration=16600000 \
     debug.sf.earlyGl.sf.duration=16600000 \
     debug.sf.earlyGl.app.duration=16600000 \
-    ro.launcher.blur.appLaunch=0 \
     ro.opengles.version=196610 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
@@ -148,14 +142,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.idle_time=32767 \
     vendor.gralloc.enable_fb_ubwc=1
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.launcher.blur.appLaunch=0
+
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.dpm.loglevel=0 \
-    persist.vendor.dpm.nsrm.bkg.evt=3955 \
     persist.vendor.dpmhalservice.enable=1
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.vendor.dpm.feature=11
+    persist.vendor.dpm.feature=11 \
+    persist.vendor.dpm.loglevel=0 \
+    persist.vendor.dpm.nsrm.bkg.evt=3955
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -172,10 +169,12 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank=0 \
     media.stagefright.thumbnail.prefer_hw_codecs=true \
-    ro.media.recorder-max-base-layer-fps=60 \
     vendor.vidc.dec.enable.downscalar=1 \
     vendor.vidc.enc.disable_bframes=1 \
     vendor.vidc.enc.disable.pq=true
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.media.recorder-max-base-layer-fps=60
 
 # Netmgr
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -196,10 +195,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
     persist.sys.fflag.override.settings_provider_model=false \
-    persist.vendor.ims.disableADBLogs=1 \
-    persist.vendor.ims.disableDebugLogs=1 \
-    persist.vendor.ims.disableIMSLogs=1 \
-    persist.vendor.ims.disableQXDMLogs=1 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.data_con_rprt=1 \

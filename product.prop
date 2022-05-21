@@ -1,6 +1,9 @@
 # BPF
 ro.kernel.ebpf.supported=true
 
+# Charger
+ro.charger.enable_suspend=true
+
 # CNE
 persist.vendor.cne.feature=1
 
