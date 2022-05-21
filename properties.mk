@@ -132,10 +132,14 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.mdpcomp.logs=0 \
     debug.renderengine.backend=skiaglthreaded \
+    debug.sf.disable_client_composition_cache=1 \
     debug.sf.enable_gl_backpressure=1 \
-    debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
+    vendor.gralloc.disable_ubwc=0 \
+    vendor.display.comp_mask=0 \
+    vendor.display.disable_scaler=0 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=1 \
     vendor.display.idle_time=32767 \
