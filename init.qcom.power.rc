@@ -59,8 +59,6 @@ on property:vendor.setup.power=1
     # Turn on sleep modes
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
-    write /sys/class/graphics/fb0/idle_time 100
-
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
 
