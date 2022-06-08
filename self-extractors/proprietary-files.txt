@@ -416,7 +416,6 @@ system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d4
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 
 # QMI (vendor) - from ginkgo V12.5.1.0.RCOCNXM
-vendor/bin/irsc_util|966036e114c22cb34be4104a4f8c985429e441fd
 vendor/bin/pd-mapper|e0f0e3da90755ecbd26b4c654cb6ecdf432c7f40
 vendor/lib/libdiag.so|1d7cdf9373c52cea62d8fce1da447761f3676f07
 vendor/lib/libdsutils.so|814fe21e8a878d2d628cc7e5a1a8a0351ec216c3
