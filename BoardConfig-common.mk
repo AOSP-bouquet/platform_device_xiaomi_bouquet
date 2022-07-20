@@ -90,7 +90,9 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.configfs=true \
     androidboot.usbcontroller=a800000.dwc3 \
     loop.max_part=7 \
-    kpti=off
+    kpti=off \
+    androidboot.boot_devices=soc/c0c4000.sdhci \
+    androidboot.super_partition=system
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -98,14 +100,32 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_VERSION := 4.19
 
 # Partitions
+BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
+BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
+    system \
+    vendor \
+    product \
+    system_ext
+
+BOARD_SUPER_PARTITION_SIZE := 5368709120
+BOARD_SUPER_PARTITION_METADATA_DEVICE := system
+BOARD_SUPER_PARTITION_BLOCK_DEVICES := system vendor
+BOARD_SUPER_PARTITION_SYSTEM_DEVICE_SIZE := 3221225472
+BOARD_SUPER_PARTITION_VENDOR_DEVICE_SIZE := 2147483648
+# Assume 4MB metadata size.
+# TODO(b/117997386): Use correct metadata size.
+BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 5368705024
+
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
-BOARD_METADATAIMAGE_PARTITION_SIZE := 1073741824
+BOARD_METADATAIMAGE_PARTITION_SIZE := 872415232
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x04000000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 48318382080
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
@@ -113,13 +133,17 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/bt_firmware:/bt_firmware \
     /mnt/vendor/persist:/persist
 PRODUCT_FS_COMPRESSION := 1
-TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Creates metadata partition mount point under root for
 # the devices with metadata parition
 BOARD_USES_METADATA_PARTITION := true
+
+# Mainline devices must have /system_ext, /vendor and /product partitions.
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_PRODUCT := product
 
 # Properties
 TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
