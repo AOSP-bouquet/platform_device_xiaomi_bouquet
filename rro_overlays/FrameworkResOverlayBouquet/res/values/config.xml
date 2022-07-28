@@ -143,10 +143,10 @@
          The brightness values must be between 0 and 255 and be non-decreasing.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>2</item>
-        <item>10</item>
-        <item>18</item>
-        <item>29</item>
+        <item>16</item>
+        <item>20</item>
+        <item>24</item>
+        <item>31</item>
         <item>48</item>
         <item>74</item>
         <item>107</item>
@@ -175,11 +175,14 @@
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
     <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
-    <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer translatable="false" name="config_brightness_ramp_rate_fast">180</integer>
-    <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer translatable="false" name="config_brightness_ramp_rate_slow">60</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">6000</integer>
+
+    <!-- The maximum range of gamma adjustment possible using the screen
+         auto-brightness adjustment setting. -->
+    <fraction name="config_autoBrightnessAdjustmentMaxGamma">200%</fraction>
+
+    <!-- Period of time in which to consider light samples in milliseconds. -->
+    <integer name="config_autoBrightnessAmbientLightHorizon">16000</integer>
 
     <!-- Configuration to restart radio upon PDP_DEACTIVATE with
          error cause as Regular deactivation(36). -->
