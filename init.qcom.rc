@@ -181,7 +181,6 @@ on early-boot
 
 on boot
     start vendor.rmt_storage
-    start rfs_access
     #### Regionalization config and prop files ####
     chmod 0644 /persist/speccfg/spec
     chmod 0644 /persist/speccfg/devicetype
