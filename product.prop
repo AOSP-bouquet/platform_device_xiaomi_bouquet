@@ -29,14 +29,6 @@ ro.netflix.bsp_rev=Q660-13149-1
 # One-handed mode
 ro.support_one_handed_mode=true
 
-# Pixelmask
-ro.build.fingerprint=google/redfin/redfin:12/SQ3A.220705.003.A1/8672226:user/release-keys
-ro.product.brand=google
-ro.product.device=redfin
-ro.product.manufacturer=Google
-ro.product.model=Pixel 5
-ro.product.name=redfin
-
 # Radio
 DEVICE_PROVISIONED=1
 persist.vendor.ims.disableADBLogs=1
