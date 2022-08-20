@@ -116,6 +116,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=SDM660
 
+# Crypto
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
