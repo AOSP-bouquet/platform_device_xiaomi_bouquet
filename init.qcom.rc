@@ -662,3 +662,15 @@ service vendor.theme_set /vendor/bin/misc_writer --set-dark-theme
 # Set dark boot flag when the device is provisioned.
 on property:persist.sys.device_provisioned=1
     start vendor.theme_set
+
+service vendor.thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-engine.conf
+	class main
+	user root
+	group root
+	socket thermal-send-client stream 0660 system oem_2907
+	socket thermal-recv-client stream 0660 system oem_2907
+	socket thermal-recv-passive-client stream 0660 system oem_2907
+	socket thermal-send-rule stream 0660 system oem_2907
+
+on property:sys.boot_completed=1
+	restart vendor.thermal-engine

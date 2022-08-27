@@ -638,8 +638,10 @@ vendor/bin/time_daemon|f1c59e5fe954fe9cb624b815354f212965e5c54e
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|243aa5db6e516d21d531d215828a5711882d8ab3
 
-# Thermal - from barbet S2B2.211203.006
--vendor/lib64/libthermalclient.so|0a12301d1557583db10f730d1d3cced841448b99
+# Thermal - from joyeuse V13.0.1.0.SJZEUXM
+vendor/bin/thermal-engine|12a8f6c192be25f2efa60b56d92303066ea6eba7
+-vendor/lib/libthermalclient.so|20114bc026d44fd2599f6ea11814c0f47608d2ff
+-vendor/lib64/libthermalclient.so|26475ef0d6b80fcf40c9490f795d21e46d3d9054
 
 # TUI - from LA.UM.9.2.1.r1-08700-sdm660.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
