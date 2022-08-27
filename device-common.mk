@@ -425,6 +425,7 @@ PRODUCT_PACKAGES += \
 include hardware/google/pixel/thermal/device.mk
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     $(LOCAL_PATH)/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
 # USB
