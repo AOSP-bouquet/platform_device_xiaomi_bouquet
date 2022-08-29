@@ -11,11 +11,11 @@
 
 # Non-A/B fstab.qcom variant
 #<src>                                                   <mnt_point>          <type>  <mnt_flags and options>                                                                         <fs_mgr_flags>
-system                                                   /system              ext4    ro,barrier=1                                                               wait,logical,first_stage_mount,readahead_size_kb=128
-system_ext                                               /system_ext          ext4    ro,barrier=1                                                               wait,logical,first_stage_mount,readahead_size_kb=128
-vendor                                                   /vendor              ext4    ro,barrier=1                                                               wait,logical,first_stage_mount,readahead_size_kb=128
-product                                                  /product             ext4    ro,barrier=1                                                               wait,logical,first_stage_mount,readahead_size_kb=128
-odm                                                      /odm                 ext4    ro,barrier=1                                                               wait,logical,first_stage_mount,readahead_size_kb=128
+system                                                   /system              erofs    ro                                                               wait,logical,first_stage_mount,readahead_size_kb=128
+system_ext                                               /system_ext          erofs    ro                                                               wait,logical,first_stage_mount,readahead_size_kb=128
+vendor                                                   /vendor              erofs    ro                                                               wait,logical,first_stage_mount,readahead_size_kb=128
+product                                                  /product             erofs    ro                                                               wait,logical,first_stage_mount,readahead_size_kb=128
+odm                                                      /odm                 erofs    ro                                                               wait,logical,first_stage_mount,readahead_size_kb=128
 /dev/block/bootdevice/by-name/userdata                   /data                f2fs    nosuid,nodev,fsync_mode=nobarrier,discard,noatime,lazytime,background_gc=sync,gc_merge,atgc,checkpoint_merge,compress_extension=apk,compress_extension=apex,compress_extension=so                                      latemount,wait,check,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+emmc_optimized,quota,fscompress,reservedsize=128M,readahead_size_kb=128
 /dev/block/by-name/logdump                               /metadata            ext4    noatime,nosuid,nodev,discard                                                                    wait,check,formattable,first_stage_mount
 /dev/block/bootdevice/by-name/misc                       /misc                emmc    defaults                                                                                        defaults
