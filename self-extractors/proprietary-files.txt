@@ -572,7 +572,7 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so|55e93923ac415862b15a7777220e100
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|0c11ff5a7a671073ee40e17d46aa8b7acbf1dc0a
 
 # Radio - IMS - from nubia NX659J 20201109.121337
--system_ext/priv-app/ims/ims.apk|3dae438ef192086a8913c06d24c055802c25f2a6
+-system_ext/priv-app/ims/ims.apk|81473e942b32bc80b7772106d5bc4b375299288e
 
 # Radio - IMS (vendor) - from ginkgo V12.5.1.0.RCOCNXM
 vendor/bin/ims_rtp_daemon|070bccd359e84a2edd42b0f19e2f366ba7a762dc
@@ -642,6 +642,7 @@ vendor/lib64/libtime_genoff.so|243aa5db6e516d21d531d215828a5711882d8ab3
 vendor/bin/thermal-engine|12a8f6c192be25f2efa60b56d92303066ea6eba7
 -vendor/lib/libthermalclient.so|20114bc026d44fd2599f6ea11814c0f47608d2ff
 -vendor/lib64/libthermalclient.so|26475ef0d6b80fcf40c9490f795d21e46d3d9054
+vendor/lib64/libthermalfeature.so|039c92ea5b7532568c63035a51426d9801eaa097
 
 # TUI - from LA.UM.9.2.1.r1-08700-sdm660.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
