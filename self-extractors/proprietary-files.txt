@@ -665,6 +665,13 @@ vendor/lib64/libsensor1.so|bba8ecb3e09a45f63eb4ee376c7aacb04f6f7cd7
 vendor/lib64/libsensor_reg.so|efd0185de8d173f8ec1e8783a4f1d95f38ea0850
 vendor/lib64/sensors.ssc.so|20b150176df8b4f658225521251884fcbac48ef1
 
+# SSR - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/bin/ssr_diag|f7dc9b9545f6c46d5149440308cc193c0a1d3eec
+vendor/bin/ssr_setup|dea3eba2c31bd405de64fb614466e02917ceac88
+vendor/bin/subsystem_ramdump|4be6d8306a6696a9a9de5a26f20bf57b623e9c0b
+vendor/lib/libsubsystem_control.so|da82bb63993a186c067de0ccd6ec0e165bb36a5e
+vendor/lib64/libsubsystem_control.so|3ae879485eedb7d1bc84a47ddef474608ddb4d3e
+
 # Time services - from LA.UM.9.2.1.r1-08700-sdm660.0
 -vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
 vendor/bin/time_daemon|f1c59e5fe954fe9cb624b815354f212965e5c54e

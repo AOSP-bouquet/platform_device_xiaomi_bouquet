@@ -241,6 +241,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.sta_detect=true \
     ro.vendor.sensors.mot_detect=true
 
+# Subsystem silent restart
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # ZRAM writeback
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.zram.mark_idle_delay_mins=60 \

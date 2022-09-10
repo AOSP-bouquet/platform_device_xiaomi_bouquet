@@ -415,6 +415,12 @@ service vendor.ss_ramdump /system/vendor/bin/subsystem_ramdump
     ioprio rt 4
     disabled
 
+service vendor.ssr_diag /system/vendor/bin/ssr_diag
+    class late_start
+    user system
+    group system
+    disabled
+
 on property:persist.sys.ssr.enable_debug=*
     write /sys/module/subsystem_restart/parameters/enable_debug ${persist.sys.ssr.enable_debug}
 
