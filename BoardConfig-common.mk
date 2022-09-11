@@ -156,6 +156,10 @@ BOARD_EXT4_SHARE_DUP_BLOCKS := true
 # the devices with metadata parition
 BOARD_USES_METADATA_PARTITION := true
 
+# Puts odex files on system_other, as well as causing dex files not to get
+# stripped from APKs.
+BOARD_USES_SYSTEM_OTHER_ODEX := true
+
 # Properties
 TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 
