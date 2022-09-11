@@ -7,13 +7,6 @@
       "UID": "system",
       "GID": "system",
       "Optional": true
-    },
-    {
-      "Controller": "blkio",
-      "Path": "/dev/blkio",
-      "Mode": "0775",
-      "UID": "system",
-      "GID": "system"
     }
   ]
 }
