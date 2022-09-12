@@ -133,7 +133,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     debug.sf.early.app.duration=16600000 \
     debug.sf.earlyGl.sf.duration=16600000 \
     debug.sf.earlyGl.app.duration=16600000 \
-    ro.opengles.version=196610
+    ro.opengles.version=196610 \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
