@@ -103,6 +103,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl:32 \
     audio.bluetooth.default
 
+MAINLINE_INCLUDE_BT_MODULE := false
+
 PRODUCT_PACKAGES += \
     libhdmiedid \
     libhfp \
