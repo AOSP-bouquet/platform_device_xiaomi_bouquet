@@ -68,7 +68,6 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|d0c4affa80c4f7ed9ae3b
 vendor/lib64/libbtnv.so|3a6fd753ae32ce264e9f741d7ca79682f21bd88a
 
 # Bluetooth (A2DP) - from LA.UM.9.2.1.r1-08700-sdm660.0
-vendor/lib/hw/audio.bluetooth_qti.default.so|1cafb5feb8bbb57aa9c0a36dee06c97084f94b70
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|813e17306755baf4627434d8b82839505a9ae8f3
 vendor/lib/btaudio_offload_if.so|f84c60e86c63dc4adbb948165e533e6e24372950
 vendor/lib/libbluetooth_audio_session_qti.so|d120b4a81cd2e5042ab3cd06c19d7bd3c6fcb72a
