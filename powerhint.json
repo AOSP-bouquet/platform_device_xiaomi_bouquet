@@ -16,6 +16,7 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
+        "1401600",
         "1113600",
         "633600"
       ],
@@ -44,21 +45,28 @@
     },
     {
       "Name": "GPUMaxFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
+      "Path": "/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
       "Values": [
-        "430000000",
-        "370000000"
+        "0",
+        "1"
+      ],
+      "Comments": [
+        "0 => 430000000",
+        "1 => 370000000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
       "Name": "GPUMinFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
+      "Path": "/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
       "Values": [
-        "430000000",
-        "370000000",
-        "160000000"
+        "0",
+        "3"
+      ],
+      "Comments": [
+        "0 => 430000000",
+        "3 => 160000000"
       ],
       "ResetOnInit": true
     },
@@ -186,7 +194,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "430000000"
+      "Value": "0"
     },
     {
       "PowerHint": "INTERACTION",
@@ -300,13 +308,13 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "370000000"
+      "Value": "0"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "430000000"
+      "Value": "0"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
@@ -336,13 +344,13 @@
       "PowerHint": "FIXED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "430000000"
+      "Value": "0"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "430000000"
+      "Value": "0"
     },
     {
       "PowerHint": "Flipendo",
