@@ -17,7 +17,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworkResOverlayTulip \
     NoCutoutOverlayTulip \
-    SystemUIGoogleTulip
+    SystemUITulip
 
 # Keymaster
 PRODUCT_PACKAGES += \

@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayWhyred \
-    SystemUIGoogleOverlayWhyred
+    SystemUIOverlayWhyred
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)

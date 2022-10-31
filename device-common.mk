@@ -25,9 +25,8 @@ PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayBouquet \
-    HentaiWallpaperRed \
-    SettingsGoogleOverlayBouquet \
-    SystemUIGoogleOverlayBouquet \
+    SettingsOverlayBouquet \
+    SystemUIOverlayBouquet \
     TelephonyOverlayBouquet \
     WifiOverlayBouquet
 
@@ -103,8 +102,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio-impl:32 \
     audio.bluetooth.default
-
-MAINLINE_INCLUDE_BT_MODULE := false
 
 PRODUCT_PACKAGES += \
     libhdmiedid \
@@ -208,10 +205,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     vendor.display.config@1.1
-
-# Display Device Config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/displayconfig/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -331,10 +324,6 @@ PRODUCT_PACKAGES += \
     libregistermsext \
     mediametrics
 
-# Misc writer
-PRODUCT_PACKAGES += \
-    misc_writer
-
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
@@ -371,7 +360,7 @@ PRODUCT_COPY_FILES += \
 
 # Preopt packages
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle
+    SystemUI
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -385,10 +374,6 @@ PRODUCT_COPY_FILES += \
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -431,10 +416,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# Tensor Flow Lite
-PRODUCT_PACKAGES += \
-    libtflite
-
 # Thermal
 include hardware/google/pixel/thermal/device.mk
 
@@ -448,10 +429,6 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
-
-# VNDK
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so
 
 # Wifi
 PRODUCT_PACKAGES += \

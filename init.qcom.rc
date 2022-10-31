@@ -659,15 +659,6 @@ on property:persist.sys.device_provisioned=1
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,7
     setprop dalvik.vm.dex2oat-threads 6
 
-# Write the dark theme magic to /misc partition.
-service vendor.theme_set /vendor/bin/misc_writer --set-dark-theme
-    disabled
-    oneshot
-
-# Set dark boot flag when the device is provisioned.
-on property:persist.sys.device_provisioned=1
-    start vendor.theme_set
-
 service vendor.thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-engine.conf
 	class main
 	user root

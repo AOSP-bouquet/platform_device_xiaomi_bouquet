@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 #
 # All components inherited here go to product image
 #
-$(call inherit-product, vendor/hentai/build/product/hentai_product.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
 
 #
 # All components inherited here go to vendor image
@@ -31,7 +31,7 @@ $(call inherit-product, vendor/hentai/build/product/hentai_product.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 
-WITH_GMS := true
+WITH_GMS := false
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
