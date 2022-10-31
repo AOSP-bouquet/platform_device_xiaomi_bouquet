@@ -29,4 +29,4 @@ odm                                                      /odm                 er
 
 /dev/block/bootdevice/by-name/boot                       /boot                emmc    defaults                                                                                        defaults
 
-/dev/block/zram0                                         none                 swap    defaults                                                                                        zramsize=2147483648,zram_backingdev_size=512M
+/dev/block/zram0                                         none                 swap    defaults                                                                                        zramsize=2147483648
