@@ -31,6 +31,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 
+# Inherit our extras
+$(call inherit-product-if-exists, vendor/extras/packages.mk)
+
 # Include GMS, Modules, and Pixel features.
 WITH_GMS := true
 $(call inherit-product, vendor/google/gms/config.mk)
