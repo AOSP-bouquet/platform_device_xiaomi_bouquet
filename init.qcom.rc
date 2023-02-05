@@ -387,7 +387,7 @@ on property:sys.boot_completed=1
     write /dev/cpuset/restricted/cpus 0-3
 
     # Start irqbalance
-    enable vendor.msm_irqbalance
+    start vendor.msm_irqbalance
 
     # Post-setup services
     setprop vendor.post_boot.parsed 1
