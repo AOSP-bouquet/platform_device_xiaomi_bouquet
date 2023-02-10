@@ -106,7 +106,7 @@ ALL_PARTITIONS := $(CORE_PARTITIONS)
 ALL_PARTITIONS += $(ADDITIONAL_PARTITIONS)
 
 $(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
-    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs) \
+    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
 # Partitions - dynamic
@@ -150,7 +150,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/bt_firmware:/bt_firmware \
     /mnt/vendor/persist:/persist
 PRODUCT_FS_COMPRESSION := 1
-BOARD_EROFS_PCLUSTER_SIZE := 262144
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
