@@ -33,6 +33,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 
 WITH_GMS := true
 
+MAINLINE_INCLUDE_ART_MODULE := false
+MAINLINE_INCLUDE_BT_MODULE := false
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
