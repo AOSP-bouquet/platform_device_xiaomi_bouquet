@@ -91,8 +91,7 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     androidboot.configfs=true \
     androidboot.usbcontroller=a800000.dwc3 \
-    loop.max_part=7 \
-    kpti=off
+    loop.max_part=7
 
 # HOLY CTS LORDS - Don't patch plz google
 BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=green
