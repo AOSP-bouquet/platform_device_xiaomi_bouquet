@@ -143,7 +143,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
     debug.sf.disable_client_composition_cache=1 \
     debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=1 \
     vendor.gralloc.disable_ubwc=0 \
     vendor.display.comp_mask=0 \
     vendor.display.disable_scaler=0 \
