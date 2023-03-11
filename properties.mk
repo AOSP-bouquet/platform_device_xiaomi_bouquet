@@ -241,4 +241,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Subsystem silent restart
 PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.ssr.restart_level=ALL_ENABLE
+    persist.vendor.ssr.restart_level=ALL_ENABLE \
+    persist.vendor.ssr.enable_ramdumps=0

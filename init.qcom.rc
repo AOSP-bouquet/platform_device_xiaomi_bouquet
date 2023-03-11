@@ -149,9 +149,6 @@ on post-fs
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
 
-    # Create directory used for dump collection
-    mkdir /data/vendor/ssrdump 0770 root system
-
     #Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
 
@@ -162,11 +159,8 @@ on post-fs-data
     mkdir /data/vendor/tombstones/lpass 0771 system system
     mkdir /data/vendor/tombstones/wcnss 0771 system system
     mkdir /data/vendor/tombstones/dsps 0771 system system
-    mkdir /data/vendor/misc/seemp 0700 system system
 
-    mkdir /data/vendor/ramdump 0771 root system
     mkdir /data/vendor/bluetooth 0770 bluetooth bluetooth
-    mkdir /data/vendor/ramdump/bluetooth 0770 bluetooth bluetooth
 
     # Create the directories used by the Wireless subsystem
     mkdir /data/vendor/wifi 0770 wifi wifi
@@ -201,7 +195,7 @@ on post-fs-data
     chmod 0771 /persist
     chown system system /persist/WCNSS_qcom_wlan_nv.bin
 
-    #Create directories for Location services
+    # Create directories for Location services
     mkdir /data/vendor/location 0770 gps gps
     mkdir /data/vendor/location/mq 0770 gps gps
     mkdir /data/vendor/location/xtwifi 0770 gps gps
@@ -210,7 +204,7 @@ on post-fs-data
     mkdir /dev/socket/location/xtra 0770 gps gps
     mkdir /dev/socket/location/dgnss 0770 gps gps
 
-    #Create directories for wifihal services
+    # Create directories for wifihal services
     mkdir /dev/socket/wifihal 0770 wifi wifi
     chmod 2770 /dev/socket/wifihal
 
@@ -221,7 +215,7 @@ on post-fs-data
 
     mkdir /data/vendor/secure_element 0777 system system
 
-    #Create dir for TUI
+    # Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
 on early-boot
@@ -236,7 +230,7 @@ on early-boot
 on boot
     start vendor.rmt_storage
     start rfs_access
-    ####Regionalization config and prop files####
+    #### Regionalization config and prop files ####
     chmod 0644 /persist/speccfg/spec
     chmod 0644 /persist/speccfg/devicetype
     chmod 0644 /persist/speccfg/mbnversion
@@ -285,7 +279,7 @@ on boot
 
     setprop ro.telephony.call_ring.multiple false
 
-    #Remove SUID bit for iproute2 ip tool
+    # Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
 
     setprop net.tcp.2g_init_rwnd 10
@@ -404,26 +398,6 @@ on property:persist.vendor.qcomsysd.enabled=1
 on property:persist.vendor.qcomsysd.enabled=0
     stop qcomsysd
 
-service vendor.ssr_setup /system/vendor/bin/ssr_setup
-    oneshot
-    disabled
-
-service vendor.ss_ramdump /system/vendor/bin/subsystem_ramdump
-    class main
-    user system
-    group system
-    ioprio rt 4
-    disabled
-
-service vendor.ssr_diag /system/vendor/bin/ssr_diag
-    class late_start
-    user system
-    group system
-    disabled
-
-on property:persist.sys.ssr.enable_debug=*
-    write /sys/module/subsystem_restart/parameters/enable_debug ${persist.sys.ssr.enable_debug}
-
 on property:persist.sys.mba_boot_timeout=*
     write /sys/module/pil_msa/parameters/pbl_mba_boot_timeout_ms ${persist.sys.mba_boot_timeout}
 
@@ -433,12 +407,26 @@ on property:persist.sys.modem_auth_timeout=*
 on property:persist.sys.pil_proxy_timeout=*
     write /sys/module/peripheral_loader/parameters/proxy_timeout_ms ${persist.sys.pil_proxy_timeout}
 
+service vendor.ss_ramdump /vendor/bin/subsystem_ramdump
+    class main
+    user root
+    group system
+    disabled
+
+service vendor.ssr_setup /vendor/bin/ssr_setup
+    oneshot
+    disabled
+
 on property:persist.vendor.ssr.restart_level=*
     start vendor.ssr_setup
 
-on property:persist.vendor.ssr.enable_ramdumps=1
+on post-fs-data && property:persist.vendor.ssr.enable_ramdumps=1
     write /sys/module/subsystem_restart/parameters/enable_ramdumps 1
-    mkdir /data/vendor/ramdump_ssr 770 system system
+    mkdir /data/vendor/wifidump 771 root system
+    mkdir /data/vendor/ramdump 771 root system
+    mkdir /data/vendor/ramdump/bluetooth 0770 bluetooth bluetooth
+    mkdir /data/vendor/ssrdump 771 root system
+    mkdir /data/vendor/ssrlog  775 root system
     start vendor.ss_ramdump
 
 on property:persist.vendor.ssr.enable_ramdumps=0
