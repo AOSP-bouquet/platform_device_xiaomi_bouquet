@@ -91,10 +91,6 @@ on init
     write /sys/devices/system/cpu/cpu6/online 1
     write /sys/devices/system/cpu/cpu7/online 1
 
-    # Support legacy paths
-    symlink /sdcard /mnt/sdcard
-    symlink /sdcard /storage/sdcard0
-
     # ZRAM setup
     write /sys/block/zram0/comp_algorithm lz4
     write /sys/block/zram0/max_comp_streams 8
@@ -553,12 +549,6 @@ service diag_mdlog_stop /system/vendor/bin/diag_mdlog -k
     group system oem_2901 sdcard_rw sdcard_r media_rw
     disabled
     oneshot
-
-service time_daemon /vendor/bin/time_daemon
-    class main
-    user system
-    group system
-    capabilities SYS_TIME
 
 # Set vendor-ril lib path based on Meta version
 on property:vendor.rild.libpath=*
