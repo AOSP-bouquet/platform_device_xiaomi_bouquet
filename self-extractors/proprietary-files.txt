@@ -357,15 +357,19 @@ vendor/lib64/libkeymasterdeviceutils.so|6fd0b0e1b30c4e6c5272794896306596880c657b
 vendor/lib64/libkeymasterprovision.so|d6c95d3543c707df133d50764f647e5f07adb82b
 vendor/lib64/libkeymasterutils.so|987314a722c4f69061fc2c2be1ecd6e7f1b8e38c
 
-# Listen - from LA.UM.9.2.1.r1-08700-sdm660.0
-vendor/lib/hw/sound_trigger.primary.sdm660.so|a631c27bd3fe9150c84c134a422eaddee20753a8
-vendor/lib/libadpcmdec.so|b3ec2cc197b682aa6ae7e1da9c8f25cc1aa75750
-vendor/lib/libgcs-calwrapper.so|f7fc56da43e70b7b68f0c3168db93f3537d38d1a
-vendor/lib/libgcs-ipc.so|4953d2a0cfb6ab0c9e083ddccd225761cb0dffe8
-vendor/lib/libgcs-osal.so|2f94817cccf6934d1ac315ef348b421dc46695bd
-vendor/lib/libgcs.so|402e5dd3612bb994ca553742b69aba36d25bef35
-vendor/lib/liblistensoundmodel2.so|296bf47af4d22e24bc09a2980ad3deea14dc163c
-vendor/lib/libsmwrapper.so|ad54f2b714f90d5b34000ac118bbd68d98d43dea
+# Listen - from lime V14.0.3.0.SJQMIXM
+vendor/lib/hw/sound_trigger.primary.bengal.so:vendor/lib/hw/sound_trigger.primary.sdm660.so|a44750f8fee89af2ebc1f687bf3783b926a85309
+vendor/lib/libadpcmdec.so|297d8fecff85b6dc67ff19e788bcf3f1286014a0
+vendor/lib/libcapiv2svacnn.so|c897fbba664fcb0ea1951d3220d8db54ae0d7995
+vendor/lib/libcapiv2vop.so|1cceaefcc1ca55de5bc932a846091e6702c5d508
+vendor/lib/libgcs-calwrapper.so|1da2bbf047d7092eac23fcf832cbb0c2ca318005
+vendor/lib/libgcs-ipc.so|60f29c6b7f2a9f7088e14e397d7c98a2199f7d3c
+vendor/lib/libgcs-osal.so|f79964988de0a9163f938ab4fd75ab133bd40da8
+vendor/lib/libgcs.so|6cc3b632743d1e79681398734f88e3987a11c506
+vendor/lib/liblistensoundmodel2.so|00635bb054f29893f3938729fc66ca3ecf1a2441
+vendor/lib/libmulawdec.so|89ebb1d9e77911f1abe37405016839d8436a9825
+vendor/lib/libsmwrapper.so|11a00c971c20def8754502ee5d88094ce3c2549b
+
 
 # Media - from LA.UM.9.2.1.r1-08700-sdm660.0
 lib/libFileMux.so|22005fb1595b2b76e199b82ff3790c1bc3d54a20
