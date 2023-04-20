@@ -47,7 +47,7 @@ ro.netflix.bsp_rev=Q660-13149-1
 ro.support_one_handed_mode=true
 
 # Pixelmask
-ro.build.fingerprint=google/redfin/redfin:13/TQ1A.230205.002/9471150:user/release-keys
+ro.build.fingerprint=google/redfin/redfin:13/TQ2A.230405.003.B2/9760227:user/release-keys
 ro.product.brand=google
 ro.product.device=redfin
 ro.product.manufacturer=Google
