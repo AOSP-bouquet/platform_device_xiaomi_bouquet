@@ -282,6 +282,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.radio.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.radio.sh \
     $(LOCAL_PATH)/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
 
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.logcat.userdebug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.logcat.rc
+else
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.logcat.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.logcat.rc
+endif
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc \
 
