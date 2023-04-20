@@ -245,3 +245,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE \
     persist.vendor.ssr.enable_ramdumps=0
+
+# System other
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cp_system_other_odex=1
