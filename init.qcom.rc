@@ -104,6 +104,7 @@ on post-fs-data
     mkdir /data/vendor/tombstones/dsps 0771 system system
     mkdir /data/vendor/camera 0770 system system
     mkdir /data/vendor/time/ 0700 system system
+    mkdir /data/vendor/ssrdump 0771 system system
 
 on zygote-start
     # zygote is started in common init.rc
@@ -115,6 +116,9 @@ on zygote-start
     mkdir /data/vendor/wifi 0771 wifi wifi
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
+
+    # Create the directories for bluetooth
+    mkdir /data/vendor/bluetooth 0770 bluetooth bluetooth
 
     # Create the directories used by CnE subsystem
     mkdir /data/vendor/connectivity 0771 radio radio
@@ -159,6 +163,18 @@ on early-boot
 
 on boot
     start vendor.rmt_storage
+
+    chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
+    chown bluetooth net_bt /sys/class/rfkill/rfkill0/state
+    chown bluetooth bluetooth /proc/bluetooth/sleep/proto
+    chown system system /sys/kernel/boot_slpi/ssr
+    chmod 0660 /sys/class/rfkill/rfkill0/state
+    chmod 0660 /proc/bluetooth/sleep/proto
+    chown bluetooth net_bt /dev/ttyHS0
+    chmod 0660 /dev/ttyHS0
+
+    chown bluetooth net_bt /sys/class/rfkill/rfkill0/device/extldo
+    chmod 0660 /sys/class/rfkill/rfkill0/device/extldo
 
     # This location is used by QCRIL to host UNIX domain
     # socket files used for internal IPC within QCRIL
