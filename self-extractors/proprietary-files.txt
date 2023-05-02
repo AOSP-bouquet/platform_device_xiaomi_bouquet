@@ -39,6 +39,15 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|afe7ec1c463d3ac73556ba2f6baf4cdd27ea9f65
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|98de2df06987d1daeb7b908b17a4c4662edfd464
 
+# ANT+ - from LA.UM.9.2.1.r1-08700-sdm660.0
+-system_ext/app/AntHalService-Soong/AntHalService-Soong.apk|7b97f0dd9c6f49781e4b9756d68940f7baaa53e0
+system_ext/lib/com.qualcomm.qti.ant@1.0.so|e3a4299bca8900f97a8c9d0f3faf5f8c1201ba02
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so|d7bbd2712cab380bfa1221ff802898cb5a8dd4ea
+vendor/lib/hw/com.dsi.ant@1.0-impl.so|fd15bd45ce601d17c4f4a1c7c5e1a830267f1954
+vendor/lib/com.dsi.ant@1.0.so|fad74667fc2db19ea1afa03e8fdfea17f63b8ca9
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|9b576e7257f06cca17de8bf44ef06782223f1121
+vendor/lib64/com.dsi.ant@1.0.so|6e8e6f153caebdbee831a7ba77d2ff255a9debd3
+
 # Audio - from LA.UM.9.2.1.r1-08700-sdm660.0
 vendor/lib/soundfx/libasphere.so|90940fca6f4b84794046513c6c6868eca9470066
 vendor/lib/soundfx/libqcbassboost.so|aac5bea9960c11c55034cea185727578f77dd99f
@@ -52,18 +61,27 @@ vendor/lib/libadm.so|2fd429c8066572cc49262fe0d452c78706197d54
 vendor/lib/libaudcal.so|ceeed3a8bc13d70198c7c1e6190d8ebf71828b7d
 vendor/lib/libqtigef.so|b3818773c4ce4e1737e2a9d75df10a03f376c57b
 
-# Bluetooth - from ginkgo V12.5.1.0.RCOCNXM
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|c2ea0d91006c5a12efa07d42cae47b3008124571
+# Bluetooth - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|5f11f243282b188a6e157c0c48ac10c72b5a7f63
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|ea763a5951a646dc018489dfb368cc72829fff44
-vendor/lib64/libbt-hidlclient.so|da867a59f05832dcd5c116fc69e692b6a4d8c77b
-vendor/lib64/libbtnv.so|086a227f793822ef3eed15aea21a207c68feb7a9
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|d0c4affa80c4f7ed9ae3b89d5e659043bb1c693e
+vendor/lib64/libbtnv.so|3a6fd753ae32ce264e9f741d7ca79682f21bd88a
 
-# Bluetooth (A2DP) - from ginkgo V12.5.1.0.RCOCNXM
-vendor/lib/hw/audio.bluetooth_qti.default.so|c4a39c069213853448ef9c8df917a74e70be2943
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|c8c79a54c30c525b7bcdce7642ee733d8b8b21af
-vendor/lib/btaudio_offload_if.so|f191ea7ab220e9cca53e017aa99fb10a08c27582
-vendor/lib/libbluetooth_audio_session_qti.so|4c24625126384af08cd670858cdbebd0a780efe1
+# Bluetooth (A2DP) - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/lib/hw/audio.bluetooth_qti.default.so|1cafb5feb8bbb57aa9c0a36dee06c97084f94b70
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|813e17306755baf4627434d8b82839505a9ae8f3
+vendor/lib/btaudio_offload_if.so|f84c60e86c63dc4adbb948165e533e6e24372950
+vendor/lib/libbluetooth_audio_session_qti.so|d120b4a81cd2e5042ab3cd06c19d7bd3c6fcb72a
+vendor/lib/libbluetooth_audio_session_qti_2_1.so|bfc2494a94cab92ea2560e3d4a5aabb241f79464
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|2c7a5f76bcbe2c0eff802a71eda4e8811f97b056
+vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so|e022f85becf9f35bba6616b41b69d4c784648516
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|79825ce70ecb6db1acbef6d228903bf9807a2755
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|7e7e30f903a3f74d87eeb8b5a1af613bc40b71b0
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|01d8b6ca2a5aceb90b98517bf38241bf49fcfe2c
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|4091508b5440a02cd819807c17c4483dc5f7df16
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|1170ddfa3a5caecca8e4cf4886cbf3d002dfcb0a
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|0374d32857735366fb7c6cb69ece1647fb5dbbd0
+vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so|d5816c084bf34fb58a04cffd681167a9227bb7df
 
 # Bluetooth (aptX) - from ginkgo V12.5.1.0.RCOCNXM
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
@@ -72,18 +90,6 @@ vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|e25f1087edc95d2ff76c1e37787ca37aae2cf175
 # Bluetooth (aptX) - from sunfish RQ1A.201205.008
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-
-# Bluetooth (Configstore) - from ginkgo V12.5.1.0.RCOCNXM
-vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|e953e79c7faaa7693baf8db51f90e0a0279caf1d
-vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so|6f5554c2ec838f0bd9eb0952ec6bd441be781c53
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|fc6265cb719afac0ff0bf6722d7f4cb4b408fd7b
-vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|871c0c27124ccbc7a0b318b33052c434d2a36506
-vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so|09c3c0effa473b79149df65bd23c5c09e6b4f8ed
-
-# Bluetooth (SAR) - from ginkgo V12.5.1.0.RCOCNXM
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|624ac893ea428a29df50336f6fe08879b1bb5c21
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|64de735684377aba4a33a3bb0bee25f7999bafcd
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|32c763b353882c9a711a641ff9eb99fe1b0e164d
 
 # Charger - from LA.UM.9.2.1.r1-08700-sdm660.0
 vendor/bin/hvdcp_opti|45f500aa4816c87de222ee7eb33655f0e83e392c
