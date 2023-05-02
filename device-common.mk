@@ -110,6 +110,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
+    libldacBT_bco \
     libhdmiedid \
     libhfp \
     libsndmonitor
