@@ -388,4 +388,15 @@
         com.android.bluetooth
     </string>
 
+    <!-- Applications which are disabled unless matching a particular sku -->
+    <string-array name="config_disableApksUnlessMatchedSku_apk_list" translatable="false">
+        <item>com.google.android.as</item>
+        <item>com.google.android.googlequicksearchbox</item>
+    </string-array>
+
+    <string-array name="config_disableApkUnlessMatchedSku_skus_list" translatable="false">
+        <item>whyred</item>
+        <item>tulip</item>
+    </string-array>
+
 </resources>
