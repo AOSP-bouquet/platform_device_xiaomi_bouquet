@@ -383,4 +383,9 @@
          auto-brightness. If unset, then it just gets the default sensor of type TYPE_LIGHT. -->
     <string name="config_displayLightSensorType" translatable="false">android.sensor.light</string>
 
+    <!-- System bluetooth stack package name -->
+    <string name="config_systemBluetoothStack" translatable="false">
+        com.android.bluetooth
+    </string>
+
 </resources>
