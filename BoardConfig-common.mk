@@ -155,11 +155,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# This should have been included in BoardConfigMainlineCommon.mk, but custom
-# ROMs moved this flag to BoardConfigEmuCommon.mk to allow resulting system
-# partitions to be mounted read/write. Such a world.
-BOARD_EXT4_SHARE_DUP_BLOCKS := true
-
 # Creates metadata partition mount point under root for
 # the devices with metadata parition
 BOARD_USES_METADATA_PARTITION := true
