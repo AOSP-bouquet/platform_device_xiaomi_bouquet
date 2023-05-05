@@ -352,7 +352,7 @@ vendor/lib64/libtinyxml.so|65608bcb8c661761a47cfb52b822904fe1444a0d
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
 
 # IRQ balance - from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
-vendor/bin/msm_irqbalance|2ac477da6216b8bf616db5a205dac4059b6d73a4
+vendor/bin/msm_irqbalance|f16cd993154581baaf60d4a1f2d9f8b0a5ee1f82
 
 # Keymaster - from LA.UM.9.2.1.r1-08700-sdm660.0
 vendor/lib/libkeymasterdeviceutils.so|a0de8c0055d2cfac9202d8eef88854c1e9795ff4
