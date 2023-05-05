@@ -38,9 +38,6 @@ persist.sys.fuse.passthrough.enable=true
 # Incremental FS
 ro.incremental.enable=1
 
-# LMKD
-ro.config.low_ram=false
-
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
