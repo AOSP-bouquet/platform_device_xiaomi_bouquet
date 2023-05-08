@@ -177,11 +177,6 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     vendor.qti.hardware.camera.device@1.0:64
 
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -390,10 +385,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     $(LOCAL_PATH)/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json
 
-# Preopt packages
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle
-
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
@@ -454,7 +445,7 @@ PRODUCT_BOOT_JARS += \
 
 # Tensor Flow Lite
 PRODUCT_PACKAGES += \
-    libtflite
+    libtensorflowlite_jni
 
 # Thermal
 PRODUCT_PACKAGES += \
