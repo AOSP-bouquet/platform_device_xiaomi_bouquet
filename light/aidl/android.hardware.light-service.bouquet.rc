@@ -16,3 +16,4 @@ service vendor.light /vendor/bin/hw/android.hardware.light-service.bouquet
     user system
     group system
     shutdown critical
+    writepid /dev/cpuset/system-background/tasks
