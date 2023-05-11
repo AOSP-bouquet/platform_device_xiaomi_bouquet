@@ -533,7 +533,7 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/m
     disabled
 
 on property:persist.sys.device_provisioned=1
-    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6,7
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5
     setprop dalvik.vm.dex2oat-threads 4
 
 # Write the dark theme magic to /misc partition.
