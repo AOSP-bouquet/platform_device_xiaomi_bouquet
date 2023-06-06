@@ -57,6 +57,8 @@ on init
     write /sys/devices/system/cpu/cpu6/online 1
     write /sys/devices/system/cpu/cpu7/online 1
 
+    insmod /vendor/lib/modules/wlan.ko
+
 on fs
     mount_all /vendor/etc/fstab.qcom --early
     chown root system /mnt/vendor/persist
